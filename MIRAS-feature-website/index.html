@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MIRAS · Udaipur, India</title>
+  <meta name="description" content="MIRAS is a slow-travel guide to Udaipur, India: palaces, lakes, old-city walks, food and folk evenings, with itineraries and trip planning.">
+  <meta name="theme-color" content="#FFF6EA">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="MIRAS · Udaipur, India">
+  <meta property="og:description" content="A slow-travel guide to the city of lakes.">
+  <meta property="og:image" content="/img/og.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Mukta:wght@300;400;500;600&family=Spectral:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Noto+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="/hero/original@2k.webp">
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+
+  <!-- sticky header: appears after the hero (rendered by src/ui/shell.js) -->
+  <header id="header"></header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-label="MIRAS, Udaipur">
+      <div class="hero-pin">
+        <div class="hero-media" id="heroMedia">
+          <canvas id="heroGL" aria-hidden="true"></canvas>
+          <canvas id="heroBirds" aria-hidden="true"></canvas>
+        </div>
+        <div class="hero-veil" aria-hidden="true"></div>
+
+        <div class="hero-title" id="heroTitle">
+          <h1 class="lockup">
+            <span class="miras" aria-label="MIRAS"><span>M</span><span>I</span><span>R</span><span>A</span><span>S</span></span>
+            <span class="city">UDAIPUR</span>
+            <span class="sub"><span class="hi" lang="hi">उदयपुर</span><span class="country">INDIA</span></span>
+          </h1>
+          <div class="divider" aria-hidden="true"><span class="ln l"></span><i class="star"></i><span class="ln r"></span></div>
+          <a class="btn" href="/plan/">Plan your journey</a>
+        </div>
+
+        <a class="scroll-cue" href="#about" aria-label="Scroll to content">
+          <span>Scroll</span><i></i>
+        </a>
+        <div class="hero-fade" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <div class="m-scope m-home" id="home">
+
+      <!-- ============ 01 · INTRO ============ -->
+      <section class="h-intro" id="about" aria-labelledby="intro-title">
+        <div class="m-wrap h-intro-grid">
+          <div class="h-intro-text">
+            <p class="m-label" data-reveal><span class="m-num">No. 01</span> Udaipur, handed down</p>
+            <h2 class="m-display" id="intro-title" data-reveal>A city that is still being lived in.</h2>
+            <p class="m-lead h-dropcap" data-reveal>Udaipur grew up around its lakes. Palaces sit on the water and white havelis climb the hills behind the ghats, but the city is not a museum. Washing dries on the ghat steps, a painter outlines an elephant with a single hair, and the chai is poured into clay cups.</p>
+            <p data-reveal>MIRAS is a guide to that city. Find a place, read the story behind it with its source shown plainly, then meet the person down the lane who still makes things by hand. Where we are not sure, we say so.</p>
+          </div>
+          <figure class="h-intro-art" data-reveal>
+            <div class="m-arch h-arch">
+              <img src="/img/palace.webp" alt="Ink drawing of the City Palace rising above old-city rooftops" width="1200" height="740" loading="lazy" decoding="async">
+            </div>
+            <figcaption class="m-hand">the palace, seen from the lanes below</figcaption>
+          </figure>
+        </div>
+        <div class="m-wrap">
+          <ol class="h-journey" aria-label="How MIRAS works">
+            <li data-reveal><span class="h-journey-n">i.</span><h3>Find a place</h3><p>Browse by what you love, or search. Every profile shows when it was last updated.</p><a class="m-link" href="/explore/">Explore <span class="m-arrow" aria-hidden="true">→</span></a></li>
+            <li data-reveal><span class="h-journey-n">ii.</span><h3>Hear its story</h3><p>Each story says whether it is History, Oral tradition or Legend, and where it comes from.</p><a class="m-link" href="/stories/">Read stories <span class="m-arrow" aria-hidden="true">→</span></a></li>
+            <li data-reveal><span class="h-journey-n">iii.</span><h3>Meet the maker nearby</h3><p>Painters, dyers, potters and puppet-makers, with what they sell kept apart from what they offer.</p><a class="m-link" href="/artisans/">Meet makers <span class="m-arrow" aria-hidden="true">→</span></a></li>
+          </ol>
+          <dl class="h-facts" data-reveal>
+            <div><dt>Best time</dt><dd><strong>October to March</strong>Clear days, cool evenings. The monsoon fills the lakes from July.</dd></div>
+            <div><dt>Getting here</dt><dd><strong>Fly, rail or road</strong>Udaipur has an airport and a city railway station.</dd></div>
+            <div><dt>Stay for</dt><dd><strong>Three or four days</strong>Enough for the lakes and a few slow evenings.</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- ============ 02 · EXPLORE ============ -->
+      <section class="m-section h-explore" id="explore" aria-labelledby="explore-title">
+        <div class="m-wrap">
+          <div class="m-sechead">
+            <div>
+              <p class="m-label" data-reveal><span class="m-num">No. 02</span> Explore the city</p>
+              <h2 class="m-h2" id="explore-title" data-reveal>Twelve places, one old city.</h2>
+            </div>
+            <a class="m-link" href="/explore/" data-reveal>All places, search and filters <span class="m-arrow" aria-hidden="true">→</span></a>
+          </div>
+          <div class="h-index" data-slot="place-index"></div>
+          <div class="h-collections" data-slot="collections"></div>
+        </div>
+      </section>
+
+      <!-- ============ 03 · STORIES ============ -->
+      <section class="m-section m-section--paper h-stories" id="stories" aria-labelledby="stories-title">
+        <div class="m-wrap">
+          <div class="m-sechead">
+            <div>
+              <p class="m-label" data-reveal><span class="m-num">No. 03</span> Stories behind the stones</p>
+              <h2 class="m-h2" id="stories-title" data-reveal>Every story tells you what kind of story it is.</h2>
+              <p data-reveal>History is documented. Oral tradition is passed down locally. Legend is told and retold. The label and the source sit right under the title, never hidden.</p>
+            </div>
+            <a class="m-link" href="/stories/" data-reveal>All stories <span class="m-arrow" aria-hidden="true">→</span></a>
+          </div>
+          <div class="h-stories-grid" data-slot="stories"></div>
+        </div>
+      </section>
+
+      <!-- ============ 04 · MAKERS ============ -->
+      <section class="m-section h-makers" id="makers" aria-labelledby="makers-title">
+        <div class="m-wrap h-makers-grid">
+          <div class="h-makers-text">
+            <p class="m-label" data-reveal><span class="m-num">No. 04</span> Meet local makers</p>
+            <h2 class="m-h2" id="makers-title" data-reveal>The people down the lane.</h2>
+            <p data-reveal>Painters working in a single hair, dyers tying cloth for leheriya waves, bangle-makers at a charcoal stove. Each profile keeps what a maker sells apart from what they offer to do for you.</p>
+            <div class="m-note m-note--demo" data-reveal data-slot="makers-note"></div>
+            <div class="m-actions" data-reveal>
+              <a class="m-btn" href="/artisans/">Meet the makers</a>
+              <a class="m-link" href="/artisans/join/">Are you a maker? Join by voice <span class="m-arrow" aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="h-postcards" data-slot="makers"></div>
+        </div>
+      </section>
+
+      <!-- ============ 05 · LESS EXPECTED ============ -->
+      <section class="m-section h-unexpected" id="unexpected" aria-labelledby="unexpected-title">
+        <div class="m-wrap">
+          <div class="h-unexpected-head">
+            <p class="m-label" data-reveal><span class="m-num">No. 05</span> Something less expected</p>
+            <h2 class="m-h2" id="unexpected-title" data-reveal>Step-wells, tea stalls and painted doorways.</h2>
+            <p class="m-hand" data-reveal>— picks from people who live here, shared carefully</p>
+          </div>
+          <div class="h-unexpected-grid" data-slot="hidden"></div>
+          <div class="h-camera" data-reveal>
+            <div class="h-camera-art m-doodle" data-slot="camera-art"></div>
+            <div>
+              <p class="m-label m-label--blue">Try the camera story</p>
+              <h3 class="m-h3">Point at a monument, get its story. Or hear "I don't know."</h3>
+              <p>A demonstration of how MIRAS will answer only from checked entries, and say so plainly when it is not sure.</p>
+              <a class="m-link" href="/explore/camera/">Open the camera demo <span class="m-arrow" aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 06 · EXPERIENCES ============ -->
+      <section class="m-section h-experiences" id="experiences" aria-labelledby="exp-title">
+        <div class="m-wrap">
+          <div class="m-sechead">
+            <div>
+              <p class="m-label" data-reveal><span class="m-num">No. 06</span> Experiences and events</p>
+              <h2 class="m-h2" id="exp-title" data-reveal>Spend an afternoon making something.</h2>
+            </div>
+            <div class="m-actions" data-reveal><a class="m-link" href="/workshops/">Workshops <span class="m-arrow" aria-hidden="true">→</span></a><a class="m-link" href="/events/">Events <span class="m-arrow" aria-hidden="true">→</span></a></div>
+          </div>
+          <div class="h-exp-grid">
+            <div data-slot="workshops"></div>
+            <div class="h-events"><p class="m-label m-label--muted">Coming up · unconfirmed</p><div class="h-tickets" data-slot="events"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 07 · PLAN ============ -->
+      <section class="m-section m-section--paper h-plan" id="plan" aria-labelledby="plan-title">
+        <div class="m-wrap h-plan-grid">
+          <div>
+            <p class="m-label" data-reveal><span class="m-num">No. 07</span> Plan your journey</p>
+            <h2 class="m-h2" id="plan-title" data-reveal>Unhurried days that respect opening hours.</h2>
+            <p data-reveal>Tell the planner how long you have and what you like. It never sends you to a place it believes is closed, keeps each day to a few stops, and tells you when it is missing the information to be sure.</p>
+            <ul class="h-trails" data-slot="trails" data-reveal></ul>
+          </div>
+          <form class="h-planform" action="/plan/" method="get" data-reveal aria-label="Start a plan">
+            <div class="m-postcard">
+              <p class="m-label">Start a plan</p>
+              <div class="m-form">
+                <div class="m-field"><label for="hp-days">How many days?</label>
+                  <select id="hp-days" name="days"><option value="1">One day</option><option value="2" selected>Two days</option><option value="3">Three days</option></select></div>
+                <fieldset class="m-field"><legend>What do you enjoy?</legend>
+                  <div class="m-checks">
+                    <label class="m-check"><input type="checkbox" name="i" value="architecture" checked> Architecture</label>
+                    <label class="m-check"><input type="checkbox" name="i" value="lakes" checked> Lakes</label>
+                    <label class="m-check"><input type="checkbox" name="i" value="crafts"> Crafts</label>
+                    <label class="m-check"><input type="checkbox" name="i" value="food"> Food</label>
+                    <label class="m-check"><input type="checkbox" name="i" value="photography"> Photography</label>
+                    <label class="m-check"><input type="checkbox" name="i" value="family"> With children</label>
+                  </div>
+                </fieldset>
+                <button class="m-btn" type="submit">Build my plan</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- ============ 08 · MEMORIES & PASSPORT ============ -->
+      <section class="m-section h-keep" id="keep" aria-labelledby="keep-title">
+        <div class="m-wrap h-keep-grid">
+          <div class="h-polaroids" data-slot="polaroids"></div>
+          <div class="h-keep-text">
+            <p class="m-label" data-reveal><span class="m-num">No. 08</span> Memories and passport</p>
+            <h2 class="m-h2" id="keep-title" data-reveal>Keep the trip, not just the photos.</h2>
+            <p data-reveal>Pick up to five moments and MIRAS pairs each with its story, but only when a checked story actually matches. Strangers' faces are flagged before anything can be shared, and nothing leaves your device in this demonstration.</p>
+            <div class="h-stamps" data-slot="stamps" data-reveal></div>
+            <div class="m-actions" data-reveal><a class="m-btn" href="/memories/">Open memories</a><a class="m-link" href="/passport/">Your heritage passport <span class="m-arrow" aria-hidden="true">→</span></a></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

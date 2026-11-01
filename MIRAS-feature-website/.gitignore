@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+tools/layers/.venv/
+tools/layers/*.pth
+tools/layers/masks/
+tools/layers/layers/
+tools/layers/plate.png
+tools/layers/plate_final.png
+tools/layers/motion_map.png

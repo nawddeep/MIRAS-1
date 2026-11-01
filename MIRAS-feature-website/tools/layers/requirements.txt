@@ -1,0 +1,7 @@
+# Python 3.11 (simple-lama-inpainting needs Pillow<10, which won't build on 3.13+)
+torch
+torchvision
+segment-anything
+simple-lama-inpainting
+opencv-python-headless
+scipy

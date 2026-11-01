@@ -1,0 +1,272 @@
+{
+ "walkers_pair": {
+  "group": "people",
+  "box": [
+   1305,
+   1450,
+   1665,
+   1898
+  ],
+  "parts": [
+   {
+    "box": [
+     1305,
+     1455,
+     1500,
+     1895
+    ],
+    "pos": [
+     [
+      1390,
+      1560
+     ],
+     [
+      1380,
+      1760
+     ]
+    ],
+    "neg": [
+     [
+      1470,
+      1560
+     ]
+    ]
+   },
+   {
+    "box": [
+     1430,
+     1460,
+     1665,
+     1898
+    ],
+    "pos": [
+     [
+      1540,
+      1560
+     ],
+     [
+      1560,
+      1760
+     ]
+    ],
+    "neg": [
+     [
+      1460,
+      1520
+     ]
+    ]
+   }
+  ],
+  "largest": true
+ },
+ "walker_saree": {
+  "group": "people",
+  "box": [
+   1752,
+   1448,
+   1992,
+   1888
+  ],
+  "largest": true
+ },
+ "walker_man": {
+  "group": "people",
+  "box": [
+   2072,
+   1418,
+   2300,
+   1902
+  ],
+  "largest": true
+ },
+ "cyclist": {
+  "group": "vehicles",
+  "box": [
+   2212,
+   1458,
+   2562,
+   1822
+  ],
+  "largest": true
+ },
+ "rickshaw_near": {
+  "group": "vehicles",
+  "box": [
+   2648,
+   1432,
+   3002,
+   1795
+  ],
+  "largest": true
+ },
+ "rickshaw_far": {
+  "group": "vehicles",
+  "box": [
+   1950,
+   1418,
+   2125,
+   1645
+  ],
+  "largest": true
+ },
+ "scooter_far": {
+  "group": "vehicles",
+  "box": [
+   1618,
+   1438,
+   1742,
+   1598
+  ],
+  "largest": true
+ },
+ "boat_1": {
+  "group": "boats",
+  "box": [
+   175,
+   2014,
+   420,
+   2092
+  ],
+  "largest": true
+ },
+ "boat_2": {
+  "group": "boats",
+  "box": [
+   502,
+   1993,
+   628,
+   2042
+  ],
+  "largest": true
+ },
+ "boat_3": {
+  "group": "boats",
+  "box": [
+   914,
+   1970,
+   1028,
+   2016
+  ],
+  "largest": true
+ },
+ "boat_4": {
+  "group": "boats",
+  "box": [
+   2088,
+   1982,
+   2350,
+   2083
+  ],
+  "largest": true
+ },
+ "boat_5": {
+  "group": "boats",
+  "box": [
+   2805,
+   1980,
+   2940,
+   2030
+  ],
+  "largest": true
+ },
+ "boat_6": {
+  "group": "boats",
+  "box": [
+   3225,
+   2008,
+   3340,
+   2058
+  ],
+  "largest": true
+ },
+ "cloud_1": {
+  "group": "sky",
+  "box": [
+   684,
+   208,
+   858,
+   262
+  ],
+  "largest": false
+ },
+ "cloud_2": {
+  "group": "sky",
+  "box": [
+   1474,
+   590,
+   1592,
+   636
+  ],
+  "largest": false
+ },
+ "cloud_3": {
+  "group": "sky",
+  "box": [
+   2466,
+   376,
+   2598,
+   432
+  ],
+  "largest": false
+ },
+ "cloud_4": {
+  "group": "sky",
+  "box": [
+   2700,
+   430,
+   2920,
+   490
+  ],
+  "largest": false
+ },
+ "birds_1": {
+  "group": "sky",
+  "box": [
+   1728,
+   578,
+   1842,
+   624
+  ],
+  "largest": false
+ },
+ "birds_2": {
+  "group": "sky",
+  "box": [
+   2668,
+   565,
+   2756,
+   604
+  ],
+  "largest": false
+ },
+ "birds_3": {
+  "group": "sky",
+  "box": [
+   2822,
+   626,
+   2866,
+   650
+  ],
+  "largest": false
+ },
+ "palm": {
+  "group": "trees",
+  "box": [
+   2108,
+   505,
+   2312,
+   1310
+  ],
+  "largest": true
+ },
+ "cloud_5": {
+  "group": "sky",
+  "box": [
+   3158,
+   118,
+   3390,
+   182
+  ],
+  "largest": false
+ }
+}

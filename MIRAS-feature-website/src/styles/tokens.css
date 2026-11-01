@@ -1,0 +1,35 @@
+/* MIRAS design tokens.
+   Names are deliberately different from the hero's tokens in src/style.css
+   (--ink, --paper, --f-*) so nothing here can change the locked hero. */
+:root {
+  --white: #FFFFFF;
+  --paper-tone: #F8F5EE;          /* selected cards and journal surfaces only */
+  --heritage: #213F6B;            /* nudged toward the hero ink (#153E7C) */
+  --heritage-deep: #182F52;
+  --inkblue: #344F76;
+  --terracotta: #B65C43;
+  --terracotta-text: #A3503A;     /* terracotta darkened for small text contrast */
+  --vermilion: #C94F45;
+  --mustard: #D8AC53;
+  --leaf: #647A58;
+  --charcoal: #292825;
+  --muted: #6F6B65;               /* #77736D darkened slightly for AA on paper tone */
+  --line: #E8E2D8;
+  --line-strong: #D6CEC0;
+  --heritage-08: rgba(33, 63, 107, .08);
+  --heritage-16: rgba(33, 63, 107, .16);
+
+  --font-serif: 'Cormorant Garamond', 'Cormorant', Georgia, 'Times New Roman', serif;
+  --font-ui: 'DM Sans', 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-deva: 'Noto Sans Devanagari', 'Mukta', 'Nirmala UI', sans-serif;
+  --font-hand: 'Caveat', 'Bradley Hand', cursive;
+  --font-mark: 'Oswald', 'Arial Narrow', sans-serif;   /* wordmark only, matches the hero lockup */
+
+  --m-gutter: clamp(20px, 5vw, 64px);
+  --m-max: 1280px;
+  --m-narrow: 760px;
+  --m-header-h: 64px;             /* matches --header-h used by the homepage anchor scroll */
+  --m-radius: 2px;
+  --m-ease: cubic-bezier(.2, .7, .2, 1);
+  --m-shadow-paper: 0 1px 0 rgba(41, 40, 37, .04), 0 10px 30px -18px rgba(41, 40, 37, .35);
+}

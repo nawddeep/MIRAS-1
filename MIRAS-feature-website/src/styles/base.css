@@ -1,0 +1,76 @@
+/* Base styles for everything outside the hero. All rules are scoped to
+   .m-scope (or body.m-page on inner pages) so the hero keeps its own cascade. */
+
+body.m-page {
+  margin: 0;
+  background: var(--white);
+  color: var(--charcoal);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+body.m-page *, body.m-page *::before, body.m-page *::after { box-sizing: border-box; }
+
+.m-scope {
+  font: 400 17px/1.65 var(--font-ui);
+  color: var(--charcoal);
+  background: var(--white);
+}
+.m-scope :where(img) { max-width: 100%; display: block; }
+.m-scope :where(a) { color: inherit; }
+.m-scope :where(p) { margin: 0 0 1em; }
+.m-scope :where(h1, h2, h3, h4) {
+  margin: 0; font-family: var(--font-serif); font-weight: 500; color: var(--heritage-deep);
+  letter-spacing: -0.005em; text-wrap: balance;
+}
+.m-scope :lang(hi), .m-scope .hi { font-family: var(--font-deva); letter-spacing: 0; }
+.m-scope ::selection { background: var(--heritage); color: var(--white); }
+.m-scope :focus-visible, body.m-page :focus-visible {
+  outline: 2px solid var(--heritage); outline-offset: 3px; border-radius: 1px;
+}
+.m-scope :where(button) { font: inherit; color: inherit; }
+.m-scope :where(ul, ol) { padding-left: 1.2em; }
+
+.m-sr {
+  position: absolute !important; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+}
+.m-skip {
+  position: fixed; left: 16px; top: -80px; z-index: 300; background: var(--heritage); color: var(--white);
+  padding: 10px 16px; text-decoration: none; font: 500 15px var(--font-ui);
+}
+.m-skip:focus { top: 12px; }
+
+.m-wrap { max-width: var(--m-max); margin: 0 auto; padding: 0 var(--m-gutter); }
+.m-narrow { max-width: var(--m-narrow); }
+
+/* type scale */
+.m-display { font: 500 clamp(44px, 6.6vw, 92px)/.98 var(--font-serif); letter-spacing: -0.015em; }
+.m-h1 { font: 500 clamp(40px, 5.4vw, 72px)/1.02 var(--font-serif); letter-spacing: -0.01em; }
+.m-h2 { font: 500 clamp(32px, 3.8vw, 52px)/1.06 var(--font-serif); }
+.m-h3 { font: 600 clamp(22px, 2vw, 28px)/1.15 var(--font-serif); }
+.m-h4 { font: 600 20px/1.2 var(--font-serif); }
+.m-lead { font: 400 clamp(20px, 1.7vw, 24px)/1.5 var(--font-serif); color: var(--charcoal); }
+.m-body-sm { font-size: 15px; line-height: 1.55; }
+.m-muted { color: var(--muted); }
+.m-italic { font-style: italic; }
+.m-hand { font: 500 clamp(20px, 1.8vw, 24px)/1.2 var(--font-hand); color: var(--inkblue); }
+
+.m-label {
+  display: inline-flex; align-items: center; gap: 10px;
+  font: 600 12px/1.2 var(--font-ui); letter-spacing: .16em; text-transform: uppercase;
+  color: var(--terracotta-text); margin: 0 0 16px;
+}
+.m-label--blue { color: var(--heritage); }
+.m-label--muted { color: var(--muted); }
+.m-label .m-num { font: 500 15px/1 var(--font-serif); letter-spacing: 0; font-style: italic; text-transform: none; }
+
+.m-rule { height: 1px; background: var(--line); border: 0; margin: 0; }
+
+/* reveal on scroll (added by JS only when motion is allowed) */
+.m-reveal-ready [data-reveal] { opacity: 0; transform: translateY(22px); transition: opacity .9s var(--m-ease), transform .9s var(--m-ease); }
+.m-reveal-ready [data-reveal].is-in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .m-scope *, .m-scope *::before, .m-scope *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+  .m-reveal-ready [data-reveal] { opacity: 1; transform: none; }
+}

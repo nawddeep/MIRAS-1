@@ -1,0 +1,233 @@
+{
+ "width": 3840,
+ "height": 2160,
+ "layers": [
+  {
+   "id": "cloud_5",
+   "group": "sky",
+   "x": 3164,
+   "y": 116,
+   "w": 228,
+   "h": 61,
+   "z": 177,
+   "label": "Cloud 5"
+  },
+  {
+   "id": "cloud_1",
+   "group": "sky",
+   "x": 689,
+   "y": 212,
+   "w": 165,
+   "h": 45,
+   "z": 257,
+   "label": "Cloud 1"
+  },
+  {
+   "id": "cloud_3",
+   "group": "sky",
+   "x": 2464,
+   "y": 381,
+   "w": 132,
+   "h": 49,
+   "z": 430,
+   "label": "Cloud 3"
+  },
+  {
+   "id": "cloud_4",
+   "group": "sky",
+   "x": 2704,
+   "y": 433,
+   "w": 212,
+   "h": 54,
+   "z": 487,
+   "label": "Cloud 4"
+  },
+  {
+   "id": "birds_2",
+   "group": "sky",
+   "x": 2673,
+   "y": 569,
+   "w": 80,
+   "h": 31,
+   "z": 600,
+   "label": "Birds 2"
+  },
+  {
+   "id": "birds_1",
+   "group": "sky",
+   "x": 1732,
+   "y": 588,
+   "w": 108,
+   "h": 38,
+   "z": 626,
+   "label": "Birds 1"
+  },
+  {
+   "id": "cloud_2",
+   "group": "sky",
+   "x": 1477,
+   "y": 594,
+   "w": 113,
+   "h": 38,
+   "z": 632,
+   "label": "Cloud 2"
+  },
+  {
+   "id": "birds_3",
+   "group": "sky",
+   "x": 2827,
+   "y": 632,
+   "w": 35,
+   "h": 14,
+   "z": 646,
+   "label": "Birds 3"
+  },
+  {
+   "id": "palm",
+   "group": "trees",
+   "x": 2112,
+   "y": 511,
+   "w": 197,
+   "h": 764,
+   "z": 11275,
+   "label": "Palm tree"
+  },
+  {
+   "id": "scooter_far",
+   "group": "vehicles",
+   "x": 1622,
+   "y": 1432,
+   "w": 118,
+   "h": 172,
+   "z": 21604,
+   "label": "Scooter (far)"
+  },
+  {
+   "id": "rickshaw_far",
+   "group": "vehicles",
+   "x": 1959,
+   "y": 1423,
+   "w": 157,
+   "h": 210,
+   "z": 21633,
+   "label": "Auto-rickshaw (far)"
+  },
+  {
+   "id": "rickshaw_near",
+   "group": "vehicles",
+   "x": 2652,
+   "y": 1435,
+   "w": 349,
+   "h": 349,
+   "z": 21784,
+   "label": "Auto-rickshaw (near)"
+  },
+  {
+   "id": "cyclist",
+   "group": "vehicles",
+   "x": 2185,
+   "y": 1452,
+   "w": 392,
+   "h": 376,
+   "z": 21828,
+   "label": "Cyclist"
+  },
+  {
+   "id": "walker_saree",
+   "group": "people",
+   "x": 1730,
+   "y": 1458,
+   "w": 259,
+   "h": 428,
+   "z": 21886,
+   "label": "Woman in saree"
+  },
+  {
+   "id": "walkers_pair",
+   "group": "people",
+   "x": 1297,
+   "y": 1464,
+   "w": 382,
+   "h": 433,
+   "z": 21897,
+   "label": "Two friends crossing"
+  },
+  {
+   "id": "walker_man",
+   "group": "people",
+   "x": 2078,
+   "y": 1420,
+   "w": 261,
+   "h": 501,
+   "z": 21921,
+   "label": "Man with backpack"
+  },
+  {
+   "id": "boat_3",
+   "group": "boats",
+   "x": 908,
+   "y": 1971,
+   "w": 124,
+   "h": 80,
+   "z": 52051,
+   "label": "Boat 3"
+  },
+  {
+   "id": "boat_5",
+   "group": "boats",
+   "x": 2799,
+   "y": 1980,
+   "w": 144,
+   "h": 76,
+   "z": 52056,
+   "label": "Boat 5"
+  },
+  {
+   "id": "boat_2",
+   "group": "boats",
+   "x": 496,
+   "y": 1994,
+   "w": 137,
+   "h": 83,
+   "z": 52077,
+   "label": "Boat 2"
+  },
+  {
+   "id": "boat_6",
+   "group": "boats",
+   "x": 3219,
+   "y": 2011,
+   "w": 128,
+   "h": 83,
+   "z": 52094,
+   "label": "Boat 6"
+  },
+  {
+   "id": "boat_4",
+   "group": "boats",
+   "x": 2084,
+   "y": 1987,
+   "w": 268,
+   "h": 122,
+   "z": 52109,
+   "label": "Boat 4"
+  },
+  {
+   "id": "boat_1",
+   "group": "boats",
+   "x": 171,
+   "y": 2015,
+   "w": 252,
+   "h": 105,
+   "z": 52120,
+   "label": "Boat 1"
+  }
+ ],
+ "plate": "plate",
+ "motionMap": {
+  "file": "motion_map.png",
+  "R": "foliage sway weight",
+  "G": "per-tree phase",
+  "B": "water ripple mask"
+ }
+}
