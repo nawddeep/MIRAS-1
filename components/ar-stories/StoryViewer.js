@@ -9,6 +9,13 @@ const MAX_SECONDS = 60;
 const EMOJI = ['😍', '🔥', '👏', '😮', '😂', '🙏'];
 const MODE_LABEL = { flat: 'Flat', '360': '360°', vr: 'VR', ar: 'AR' };
 
+/** Applies mute and pause to a video element. Imperative DOM control, kept outside React's render model. */
+function syncPlayback(v, muted, paused, onAutoplayBlocked) {
+  v.muted = muted;
+  if (paused) v.pause();
+  else v.play().catch(() => { v.muted = true; onAutoplayBlocked(); v.play().catch(() => {}); });
+}
+
 /** Loads a story's media element (image or video). */
 function loadMedia(s, muted) {
   return new Promise((resolve, reject) => {
@@ -107,9 +114,7 @@ export default function StoryViewer({ userId, startId }) {
   useEffect(() => {
     const v = media ? elRef.current : null;
     if (!v || v.tagName !== 'VIDEO') return;
-    v.muted = muted;
-    if (effPaused) v.pause();
-    else v.play().catch(() => { v.muted = true; setMuted(true); v.play().catch(() => {}); });
+    syncPlayback(v, muted, effPaused, () => setMuted(true));
   }, [media, effPaused, muted, activeMode]); // re-assert after moving the element between flat and 3D views
   useEffect(() => { const v = media ? elRef.current : null; return () => { if (v?.tagName === 'VIDEO') { v.pause(); v.removeAttribute('src'); v.load(); } }; }, [media]);
 

@@ -1,4 +1,5 @@
 'use client';
+/* eslint-disable @next/next/no-img-element -- these show streamed, signed-in-only story media and a blob: preview of the visitor's own file; next/image cannot optimise either */
 import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
