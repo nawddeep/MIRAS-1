@@ -1,0 +1,12 @@
+{
+  "id": "sample-lake-palace",
+  "title": "Old-city architecture and the waterfront",
+  "theme": "City Palace \u2192 Jagdish Temple \u2192 Bagore Ki Haveli. Suggested walking sequence; allow extra time for admissions and check pedestrian access. Duration is an estimate, not a surveyed route.",
+  "placeIds": [
+    "city-palace",
+    "jagdish-temple",
+    "bagore-ki-haveli"
+  ],
+  "approxMinutes": 240,
+  "isSample": false
+}

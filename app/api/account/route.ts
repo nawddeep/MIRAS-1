@@ -2,6 +2,8 @@ import { cookies } from 'next/headers';
 import { z } from 'zod';
 import { getCommunity } from '@/lib/community/store';
 import { apiError,bodyJson,clearSession,currentMember,json,requestKey,requireMember,sameOrigin,SESSION_COOKIE,setSession } from '@/lib/community/http';
+import { deleteMediaDataForUser } from '@/lib/media-social/db';
+import { removeUploads } from '@/lib/media-social/storage';
 export const runtime='nodejs';
 const username=z.string().trim().toLowerCase().regex(/^[a-z0-9_]{3,24}$/);
 const password=z.string().min(12).max(128);
@@ -32,5 +34,5 @@ export async function POST(req: Request){try{
  if(data.action==='update')return json({ok:true,user:store.update(user.id,data)});
  store.limit(`password:${user.id}`,5);
  if(data.action==='password'){await setSession(await store.changePassword(user.id,data.oldPassword,data.password));return json({ok:true});}
- await store.removeAccount(user.id,data.password);await clearSession();return json({ok:true});
+ await store.removeAccount(user.id,data.password);await removeUploads(deleteMediaDataForUser(user.id));await clearSession();return json({ok:true});
  }catch(error){return apiError(error);}}

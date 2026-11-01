@@ -1,0 +1,16 @@
+{
+  "files": 27,
+  "places": 15,
+  "status": "pass",
+  "viewports": [
+    "390x844",
+    "1440x900"
+  ],
+  "checks": [
+    "All local photos return 200",
+    "No page overflow",
+    "Gallery image switch loads",
+    "Photo credits and licences visible",
+    "Reduced motion disables image animation"
+  ]
+}

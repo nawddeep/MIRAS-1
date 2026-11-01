@@ -1,0 +1,53 @@
+{
+  "contract": "README.md",
+  "targetViewports": [
+    "390x844",
+    "1440x900"
+  ],
+  "accessibility": {
+    "status": "pass",
+    "evidence": "Source notes use keyboard-operable native details/summary; map links have descriptive text and open the named location without geolocation permission. Existing text/focus tokens preserved. Headings and link names reviewed in rendered hidden collection and place guide."
+  },
+  "responsive": {
+    "status": "pass",
+    "evidence": "Places, Stories, Hidden Udaipur, badges, trails and Lake Pichola rendered at 390x844 and 1440x900. Automated no-horizontal-overflow assertions pass. Fifteen detail routes and all three trail stop counts validated."
+  },
+  "contentStates": {
+    "loading": {
+      "status": "pass",
+      "evidence": "Fixed cached gallery image race by checking image.complete on attachment; final browser check waits for both gallery images to leave loading state."
+    },
+    "empty": {
+      "status": "pass",
+      "evidence": "New guides without rights-cleared photographs retain the existing illustrated fallback. No unavailable venue photographs are presented as real."
+    },
+    "error": {
+      "status": "pass",
+      "evidence": "Content checker rejects invalid badge thresholds and missing hidden-place references; added unit tests pass. No runtime error occurred in rendered page checks."
+    },
+    "partial": {
+      "status": "pass",
+      "evidence": "Place guides expose source references and approximate-coordinate notes; unknown accessibility and current hours are retained as unconfirmed. Curated spots search named map listings instead of navigating to lake-centre coordinates."
+    },
+    "success": {
+      "status": "pass",
+      "evidence": "15 places, 20 stories, 10 curated stops, 3 trails and 6 badge definitions loaded with expected browser counts. All place and trail detail pages return 200."
+    },
+    "permission": {
+      "status": "not-applicable",
+      "reason": "Content browsing and named map searches do not request device permissions. No accounts, uploads or booking permissions are introduced."
+    }
+  },
+  "renderedEvidence": [
+    {
+      "viewport": "390x844",
+      "artifact": "discover-hidden-390.png",
+      "observation": "Ten location guides with readable text, guide links, map searches and source/access notes."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "discover-hidden-1440.png",
+      "observation": "Expanded collection retains readable line lengths and working source disclosures on desktop."
+    }
+  ]
+}

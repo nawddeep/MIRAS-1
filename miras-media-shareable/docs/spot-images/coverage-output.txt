@@ -1,0 +1,32 @@
+{
+  imported: 224,
+  visible: 201,
+  matchedPlacePhotos: 22,
+  categoryVisuals: 179,
+  excludedScrapeNoise: [
+    'ad',
+    'virendra-singh-shaktawat',
+    'arjun-singh-rathore',
+    'instagram',
+    'udaipur-hidden-waterfall',
+    'stepout',
+    'thejamminghousecafe',
+    'what-is-the-best-time-for-offbeat-udaipur',
+    'safety-access-and-etiquette-for-udaipur-s-less-touristy-places',
+    'is-it-better-to-hire-a-local-driver-for-offbeat-udaipur',
+    'udaipur-mount-abu-tour-with-nakki-lake-and-dilwara-temples',
+    'related-topics',
+    'more-about-udaipur',
+    'udaipur-trip-cost-2026-budget-for-2-3-4-and-5-days',
+    'planning-a-trip-around-udaipur',
+    'company',
+    'policies',
+    'important-links',
+    'connect-with-us',
+    'legal',
+    'rajasthan-5-nights-6-days-jaipur-jodhpur-udaipur',
+    'royal-rajasthan-tour-5n-6d-udaipur-jodhpur-jaisalmer',
+    'royal-rajasthan-escape'
+  ],
+  localPhotoAssets: 27
+}

@@ -1,0 +1,30 @@
+{
+  "id": "udai-sagar",
+  "slug": "udai-sagar",
+  "name": "Udai Sagar Lake",
+  "name_hi": "उदय सागर झील",
+  "category": "Lake",
+  "lat": 24.570811,
+  "lng": 73.821351,
+  "summary": "A historic reservoir east of Udaipur, associated with a dam on the Berach River.",
+  "visitTips": [
+    "Confirm admission, opening hours and the correct entrance before travelling.",
+    "Allow extra time for steps, heat and busy streets; ask staff about access needs."
+  ],
+  "openingHours": "Check with the venue before visiting; current admission hours are not confirmed.",
+  "typicalVisitMinutes": 60,
+  "photos": [
+    "/media/places/udai-sagar-1.webp"
+  ],
+  "accessibility": {
+    "stepFree": "unknown",
+    "notes": "Step-free routes and facilities have not been checked in person."
+  },
+  "status": "published",
+  "isSample": false,
+  "sourceRefs": [
+    "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/udai-sagar-lake"
+  ],
+  "coordinateNote": "Approximate geographic reference, not an entrance pin. Use the named Google Maps listing and confirm access.",
+  "coordinateSource": "https://en.wikipedia.org/wiki/Udaisagar_Lake"
+}

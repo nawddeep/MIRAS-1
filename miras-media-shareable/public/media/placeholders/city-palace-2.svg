@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FB0D6"/><stop offset=".6" stop-color="#C9D9EA"/><stop offset="1" stop-color="#F3E3D3"/></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#s)"/>
+  <path d="M0 560 C 260 430 420 520 640 470 S 1080 400 1300 480 S 1520 520 1600 500 V 900 H 0 Z" fill="#5C8665" opacity=".85"/>
+  <rect y="640" width="1600" height="260" fill="#8FB0D6" opacity=".75"/>
+  <text x="800" y="830" text-anchor="middle" font-family="sans-serif" font-size="40" fill="#131B31" opacity=".55">Placeholder image · city-palace-2</text>
+</svg>

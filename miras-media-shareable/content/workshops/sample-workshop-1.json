@@ -1,0 +1,13 @@
+{
+  "id": "sample-workshop-1",
+  "artisanId": "sample-artisan-1",
+  "title": "SAMPLE: workshop title goes here",
+  "description": "SAMPLE: workshop description goes here.",
+  "language": "Hindi, English",
+  "durationMinutes": 90,
+  "cost": "SAMPLE: cost goes here",
+  "howToBook": "SAMPLE: how to book goes here (outside the app)",
+  "status": "draft",
+  "updatedAt": "2026-10-28T00:00:00.000Z",
+  "isSample": true
+}

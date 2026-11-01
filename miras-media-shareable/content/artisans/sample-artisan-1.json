@@ -1,0 +1,26 @@
+{
+  "id": "sample-artisan-1",
+  "name": "Rajasthan Miniature Painting",
+  "craft": "राजस्थानी लघु चित्रकला",
+  "description": "Intricate lines and rich colours, painted one patient brushstroke at a time. Explore Rajasthan’s miniature painting tradition. Example craft profile; artisan identity and consent are not verified.",
+  "description_hi": "बारीक रेखाएँ और रंगों की समृद्ध परंपरा। यह एक नमूना शिल्प परिचय है, सत्यापित कारीगर की सूची नहीं।",
+  "materials": [],
+  "languages": [
+    "Hindi",
+    "English"
+  ],
+  "photos": [
+    "/media/pichhola/artisan.webp",
+    "/media/pichhola/artwork-detail.webp",
+    "/media/pichhola/artwork.webp"
+  ],
+  "contact": "sample-artisan-1@example.invalid",
+  "locationText": "Udaipur, Rajasthan · sample listing",
+  "status": "draft",
+  "consent": {
+    "given": false
+  },
+  "photoRights": "User-supplied illustrative artwork; rights not independently verified.",
+  "editToken": "sample-edit-token-1-40447317d2a18681",
+  "isSample": true
+}

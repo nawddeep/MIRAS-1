@@ -1,0 +1,5 @@
+[
+  { "id": "sample-phrase-1", "en": "SAMPLE: phrase 1 in English goes here", "hi": "नमूना: वाक्य 1 हिंदी में यहाँ आएगा", "isSample": true },
+  { "id": "sample-phrase-2", "en": "SAMPLE: phrase 2 in English goes here", "hi": "नमूना: वाक्य 2 हिंदी में यहाँ आएगा", "isSample": true },
+  { "id": "sample-phrase-3", "en": "SAMPLE: phrase 3 in English goes here", "hi": "नमूना: वाक्य 3 हिंदी में यहाँ आएगा", "isSample": true }
+]

@@ -1,0 +1,53 @@
+{
+  "contract": "README.md",
+  "targetViewports": [
+    "390x844",
+    "1440x900"
+  ],
+  "accessibility": {
+    "status": "pass",
+    "evidence": "Native Photo credits disclosure is keyboard-operable. Source and licence links include title and licence text. Galleries preserve descriptive alt text, named thumbnail buttons, pressed state and polite caption updates. Reduced-motion image animation is none in browser check."
+  },
+  "responsive": {
+    "status": "pass",
+    "evidence": "Place listing, Shilpgram, Ahar Museum, Stories and Shilpgram story rendered at both target viewports with no horizontal overflow. Gallery frames remain fixed while photographs load; credit text wraps."
+  },
+  "contentStates": {
+    "loading": {
+      "status": "pass",
+      "evidence": "Browser checks wait for all gallery images to complete with naturalWidth>0 and data-loading=false. All 27 local assets return 200."
+    },
+    "empty": {
+      "status": "not-applicable",
+      "reason": "All 15 place galleries now contain at least one licensed photo; this change adds no empty gallery state."
+    },
+    "error": {
+      "status": "pass",
+      "evidence": "An optional source download failure was excluded from published files. Existing gallery image-error handling remains intact. Content check confirms no missing referenced media or rights records."
+    },
+    "partial": {
+      "status": "pass",
+      "evidence": "Three places have one photo; other galleries have two. Each gallery accurately reports its image count. Museum collection objects and hill views have contextual captions."
+    },
+    "success": {
+      "status": "pass",
+      "evidence": "All 27 photos load. Shilpgram second-image selection updates to shilpgram-2.webp and expanded Photo credits contains two source/author/licence records."
+    },
+    "permission": {
+      "status": "not-applicable",
+      "reason": "Local photo display requests no camera, storage or location permission. Licences are recorded in the media registry with source links."
+    }
+  },
+  "renderedEvidence": [
+    {
+      "viewport": "390x844",
+      "artifact": "places-shilpgram-390.png",
+      "observation": "Mobile Shilpgram guide displays real village photograph, second thumbnail and collapsed Photo credits without overflow."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "places-shilpgram-1440.png",
+      "observation": "Desktop guide retains stable image crop, gallery controls and readable credit disclosure."
+    }
+  ]
+}

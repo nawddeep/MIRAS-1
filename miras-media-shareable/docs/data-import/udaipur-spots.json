@@ -1,0 +1,11 @@
+{
+  "source": "udaipur_hidden_gems_and_spots_updated.csv",
+  "inputRows": 225,
+  "imported": 224,
+  "duplicatesRemoved": [
+    "Fateh Prakash Palace"
+  ],
+  "withCoordinates": 85,
+  "truncatedDescriptions": 66,
+  "verification": "No external facts verified. Original reported fields retained as research."
+}

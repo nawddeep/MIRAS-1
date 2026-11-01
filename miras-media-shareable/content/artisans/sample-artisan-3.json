@@ -1,0 +1,24 @@
+{
+  "id": "sample-artisan-3",
+  "name": "Sample Artisan 3",
+  "craft": "SAMPLE craft: painting",
+  "description": "SAMPLE: description of Sample Artisan 3's work goes here.",
+  "description_hi": "नमूना: सैंपल कारीगर 3 के काम का विवरण यहाँ आएगा।",
+  "materials": [],
+  "languages": [
+    "Hindi",
+    "English"
+  ],
+  "photos": [
+    "/media/placeholders/artisan-3.svg"
+  ],
+  "contact": "sample-artisan-3@example.invalid",
+  "locationText": "SAMPLE: area in Udaipur",
+  "status": "draft",
+  "consent": {
+    "given": false
+  },
+  "photoRights": "Generated placeholder, owned by Team Impala",
+  "editToken": "sample-edit-token-3-90c3bbadc136d976",
+  "isSample": true
+}

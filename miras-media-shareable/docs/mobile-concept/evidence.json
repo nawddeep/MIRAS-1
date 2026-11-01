@@ -1,0 +1,113 @@
+{
+  "contract": "reference-alignment.md",
+  "targetViewports": [
+    "390x844",
+    "1440x900"
+  ],
+  "accessibility": {
+    "status": "pass",
+    "evidence": "Native labelled controls and aria-pressed journal/community buttons verified. Tab shows visible focus under reduced motion; no artificial device chrome. Photos have a dark scrim beneath white titles. Primary place save and planning actions verified."
+  },
+  "responsive": {
+    "status": "pass",
+    "evidence": "Six screens rendered at 360px, 390x844 and 1440x900 without horizontal overflow or browser page errors. All 18 feature destinations remain reachable. Home stack margin conflict corrected."
+  },
+  "contentStates": {
+    "loading": {
+      "status": "pass",
+      "evidence": "Saved collection hydrates from device storage; browser waits for actual saved cards. Image frames reserve dimensions; final populated captures disable reveal animation."
+    },
+    "empty": {
+      "status": "pass",
+      "evidence": "Fresh browser captures show empty saved collection and planner with Explore places recovery. Memories tab offers Create a memory."
+    },
+    "error": {
+      "status": "pass",
+      "evidence": "Browser test replaces Storage.setItem with a throwing implementation, then clicks Add to my day and verifies could-not-save status."
+    },
+    "partial": {
+      "status": "pass",
+      "evidence": "Three selected places with unknown hours render their photo rows. Make my plan exposes scheduling problems and suggested-trails recovery."
+    },
+    "success": {
+      "status": "pass",
+      "evidence": "Bookmarks change to Remove bookmark, add-to-plan changes to View my day. Community follow, like and submitted comment verified in preview."
+    },
+    "permission": {
+      "status": "not-applicable",
+      "reason": "These styling and navigation changes introduce no permission request, authentication or upload. Existing camera and account flows remain separate destinations."
+    }
+  },
+  "renderedEvidence": [
+    {
+      "viewport": "390x844",
+      "artifact": "home-390.png",
+      "observation": "home rendered without horizontal overflow; typography, controls and navigation inspected."
+    },
+    {
+      "viewport": "390x844",
+      "artifact": "places-pichhola-390.png",
+      "observation": "places-pichhola rendered without horizontal overflow; typography, controls and navigation inspected."
+    },
+    {
+      "viewport": "390x844",
+      "artifact": "plan-390.png",
+      "observation": "plan rendered without horizontal overflow; typography, controls and navigation inspected."
+    },
+    {
+      "viewport": "390x844",
+      "artifact": "discover-community-390.png",
+      "observation": "discover-community rendered without horizontal overflow; typography, controls and navigation inspected."
+    },
+    {
+      "viewport": "390x844",
+      "artifact": "discover-390.png",
+      "observation": "discover rendered without horizontal overflow; typography, controls and navigation inspected."
+    },
+    {
+      "viewport": "390x844",
+      "artifact": "profile-390.png",
+      "observation": "profile rendered without horizontal overflow; typography, controls and navigation inspected."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "home-1440.png",
+      "observation": "home rendered without horizontal overflow; typography, controls and navigation inspected."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "places-pichhola-1440.png",
+      "observation": "places-pichhola rendered without horizontal overflow; typography, controls and navigation inspected."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "plan-1440.png",
+      "observation": "plan rendered without horizontal overflow; typography, controls and navigation inspected."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "discover-community-1440.png",
+      "observation": "discover-community rendered without horizontal overflow; typography, controls and navigation inspected."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "discover-1440.png",
+      "observation": "discover rendered without horizontal overflow; typography, controls and navigation inspected."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "profile-1440.png",
+      "observation": "profile rendered without horizontal overflow; typography, controls and navigation inspected."
+    },
+    {
+      "viewport": "390x844",
+      "artifact": "profile-saved-390.png",
+      "observation": "Two actual saved items in isolated test storage with three locked milestones."
+    },
+    {
+      "viewport": "390x844",
+      "artifact": "plan-selected-390.png",
+      "observation": "Three selected stops and photos, date controls, duration and mode, Add a place and device storage note."
+    }
+  ]
+}

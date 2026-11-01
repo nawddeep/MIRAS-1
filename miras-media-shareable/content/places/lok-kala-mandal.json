@@ -1,0 +1,35 @@
+{
+  "id": "lok-kala-mandal",
+  "slug": "lok-kala-mandal",
+  "name": "Bharatiya Lok Kala Mandal",
+  "name_hi": "भारतीय लोक कला मंडल",
+  "category": "Museum",
+  "lat": 24.5944916,
+  "lng": 73.6894614,
+  "summary": "A cultural institution devoted to folk arts, with museum collections and a puppet theatre.",
+  "visitTips": [
+    "Confirm admission, opening hours and the correct entrance before travelling.",
+    "Allow extra time for steps, heat and busy streets; ask staff about access needs."
+  ],
+  "openingHours": "Museum website lists 09:00–17:30 (checked 30 October 2026); confirm holiday changes and separate performance times.",
+  "typicalVisitMinutes": 75,
+  "photos": [
+    "/media/places/lok-kala-mandal-1.webp"
+  ],
+  "accessibility": {
+    "stepFree": "unknown",
+    "notes": "Step-free routes and facilities have not been checked in person."
+  },
+  "status": "published",
+  "isSample": false,
+  "sourceRefs": [
+    "https://lokkalamandal.com/"
+  ],
+  "coordinateNote": "Approximate geographic reference, not an entrance pin. Use the named Google Maps listing and confirm access.",
+  "coordinateSource": "https://en.wikipedia.org/wiki/Bharatiya_Lok_Kala_Mandal",
+  "openingTimes": {
+    "open": "09:00",
+    "close": "17:30",
+    "closedDays": []
+  }
+}

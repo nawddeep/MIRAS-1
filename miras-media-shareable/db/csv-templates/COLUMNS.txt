@@ -1,0 +1,772 @@
+Import order (parents first):
+media_assets, categories, places, ar_overlays, users, artisans, artisan_languages, artisan_materials, artisan_media, artisan_places, auth_attempts, badge_definitions, blocks, booking_sources, merchants, bookings, camera_matches, companions, companion_availability, companion_experiences, companion_languages, craft_showcases, craft_steps, day_plans, day_plan_stops, workshops, enquiries, event_categories, events, event_attendance, event_includes, event_reminders, event_tiers, follows, local_friends, travel_groups, group_itinerary_items, group_join_requests, group_members, group_polls, group_messages, group_poll_options, group_poll_votes, group_suggestions, group_vibes, hidden_spots, trails, journeys, journey_places, live_sessions, live_events, live_messages, local_friend_expertise, local_friend_languages, local_friend_reports, local_requests, local_verification_history, local_verifications, music_tracks, memories, memory_moments, moderation_actions, offline_packs, onboarding_drafts, stories, panoramas, panorama_hotspots, passport_stamps, payments, phrases, place_facts, place_photos, place_recognition_refs, place_sources, place_tips, posts, post_comments, post_likes, post_media, post_shares, qr_codes, qr_scans, refunds, rental_shops, rental_offers, reports, saved_items, sessions, stays, stay_prices, stay_sustainability, story_texts, story_audio, trail_progress, trail_stops, traveller_profiles, trip_reviews, user_badges, user_roles, verification_appeals, workshop_sessions
+
+table.column  TYPE  required|optional  [default]
+media_assets.id  TEXT  optional
+media_assets.kind  TEXT  optional  ['image']
+media_assets.path  TEXT  required
+media_assets.title  TEXT  optional
+media_assets.owner  TEXT  required
+media_assets.permitted_use  TEXT  required
+media_assets.licence_note  TEXT  optional  ['']
+media_assets.license  TEXT  optional
+media_assets.license_url  TEXT  optional
+media_assets.source_url  TEXT  optional
+media_assets.contains_people  INTEGER  optional  [0]
+media_assets.width  INTEGER  optional
+media_assets.height  INTEGER  optional
+media_assets.duration_seconds  REAL  optional
+media_assets.is_sample  INTEGER  optional  [0]
+media_assets.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+categories.id  TEXT  optional
+categories.name  TEXT  required
+categories.name_hi  TEXT  optional
+categories.position  INTEGER  optional  [0]
+places.id  TEXT  optional
+places.slug  TEXT  required
+places.name  TEXT  required
+places.name_hi  TEXT  optional
+places.category_id  TEXT  required
+places.lat  REAL  required
+places.lng  REAL  required
+places.summary  TEXT  required
+places.summary_hi  TEXT  optional
+places.typical_visit_minutes  INTEGER  required
+places.opening_hours_text  TEXT  required
+places.open_time  TEXT  optional
+places.close_time  TEXT  optional
+places.closed_days  TEXT  optional  ['']
+places.hours_checked_at  TEXT  optional
+places.hours_checked_by  TEXT  optional
+places.entry_fee_text  TEXT  optional
+places.fee_checked_at  TEXT  optional
+places.fee_checked_by  TEXT  optional
+places.step_free  TEXT  optional  ['unknown']
+places.accessibility_notes  TEXT  optional
+places.cover_media_id  TEXT  optional
+places.status  TEXT  optional  ['draft']
+places.is_sample  INTEGER  optional  [0]
+places.coordinate_note  TEXT  optional
+places.coordinate_source  TEXT  optional
+places.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+places.updated_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+ar_overlays.id  TEXT  optional
+ar_overlays.place_id  TEXT  required
+ar_overlays.title  TEXT  required
+ar_overlays.title_hi  TEXT  optional
+ar_overlays.description  TEXT  optional
+ar_overlays.era_label  TEXT  optional
+ar_overlays.media_id  TEXT  optional
+ar_overlays.anchor_json  TEXT  optional
+ar_overlays.verified_by  TEXT  optional
+ar_overlays.verified_at  TEXT  optional
+ar_overlays.status  TEXT  optional  ['draft']
+ar_overlays.is_sample  INTEGER  optional  [1]
+users.id  TEXT  optional
+users.username  TEXT  required
+users.display_name  TEXT  required
+users.bio  TEXT  optional  ['']
+users.privacy  TEXT  optional  ['private']
+users.lang  TEXT  optional  ['en']
+users.email  TEXT  optional
+users.phone  TEXT  optional
+users.avatar_media_id  TEXT  optional
+users.password_hash  TEXT  required
+users.recovery_hash  TEXT  required
+users.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+artisans.id  TEXT  optional
+artisans.user_id  TEXT  optional
+artisans.name  TEXT  required
+artisans.craft  TEXT  required
+artisans.headline  TEXT  optional
+artisans.description  TEXT  required
+artisans.description_hi  TEXT  optional
+artisans.contact  TEXT  required
+artisans.locality_text  TEXT  required
+artisans.lat  REAL  optional
+artisans.lng  REAL  optional
+artisans.photo_rights  TEXT  required
+artisans.consent_given  INTEGER  optional  [0]
+artisans.consent_date  TEXT  optional
+artisans.consent_doc_ref  TEXT  optional
+artisans.owner_confirmed_at  TEXT  optional
+artisans.edit_token_hash  TEXT  optional
+artisans.status  TEXT  optional  ['draft']
+artisans.is_sample  INTEGER  optional  [0]
+artisans.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+artisans.updated_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+artisan_languages.artisan_id  TEXT  optional
+artisan_languages.language  TEXT  optional
+artisan_materials.artisan_id  TEXT  optional
+artisan_materials.material  TEXT  optional
+artisan_media.artisan_id  TEXT  optional
+artisan_media.media_id  TEXT  optional
+artisan_media.kind  TEXT  optional  ['work']
+artisan_media.position  INTEGER  optional  [0]
+artisan_places.artisan_id  TEXT  optional
+artisan_places.place_id  TEXT  optional
+auth_attempts.key  TEXT  optional
+auth_attempts.hits  INTEGER  required
+auth_attempts.until_epoch  INTEGER  required
+badge_definitions.id  TEXT  optional
+badge_definitions.title  TEXT  required
+badge_definitions.title_hi  TEXT  optional
+badge_definitions.description  TEXT  required
+badge_definitions.metric  TEXT  required
+badge_definitions.threshold  INTEGER  required
+badge_definitions.icon_media_id  TEXT  optional
+blocks.blocker_id  TEXT  optional
+blocks.target_id  TEXT  optional
+booking_sources.id  TEXT  optional
+booking_sources.name  TEXT  required
+booking_sources.website  TEXT  optional
+booking_sources.is_active  INTEGER  optional  [1]
+merchants.id  TEXT  optional
+merchants.kind  TEXT  required
+merchants.name  TEXT  required
+merchants.user_id  TEXT  optional
+merchants.phone  TEXT  optional
+merchants.email  TEXT  optional
+merchants.payout_provider  TEXT  optional
+merchants.payout_ref  TEXT  optional
+merchants.verified_by  TEXT  optional
+merchants.verified_at  TEXT  optional
+merchants.status  TEXT  optional  ['pending']
+merchants.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+bookings.id  TEXT  optional
+bookings.user_id  TEXT  required
+bookings.merchant_id  TEXT  required
+bookings.item_type  TEXT  required
+bookings.item_id  TEXT  required
+bookings.starts_at  TEXT  optional
+bookings.ends_at  TEXT  optional
+bookings.quantity  INTEGER  optional  [1]
+bookings.amount_minor  INTEGER  required
+bookings.currency  TEXT  optional  ['INR']
+bookings.contact  TEXT  optional
+bookings.notes  TEXT  optional
+bookings.status  TEXT  optional  ['requested']
+bookings.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+bookings.updated_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+camera_matches.id  TEXT  optional
+camera_matches.user_id  TEXT  optional
+camera_matches.place_id  TEXT  optional
+camera_matches.confidence  REAL  required
+camera_matches.band  TEXT  required
+camera_matches.person_is_main_subject  INTEGER  optional  [0]
+camera_matches.model  TEXT  optional
+camera_matches.accepted  INTEGER  optional
+camera_matches.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+companions.id  TEXT  optional
+companions.user_id  TEXT  required
+companions.display_name  TEXT  required
+companions.bio  TEXT  required
+companions.bio_hi  TEXT  optional
+companions.area_label  TEXT  optional
+companions.photo_media_id  TEXT  optional
+companions.identity_verified_by  TEXT  optional
+companions.identity_verified_at  TEXT  optional
+companions.safety_rules_version  TEXT  optional
+companions.safety_agreed_at  TEXT  optional
+companions.merchant_id  TEXT  optional
+companions.status  TEXT  optional  ['draft']
+companions.is_sample  INTEGER  optional  [0]
+companions.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+companion_availability.id  TEXT  optional
+companion_availability.companion_id  TEXT  required
+companion_availability.starts_at  TEXT  required
+companion_availability.ends_at  TEXT  required
+companion_availability.is_booked  INTEGER  optional  [0]
+companion_experiences.id  TEXT  optional
+companion_experiences.companion_id  TEXT  required
+companion_experiences.title  TEXT  required
+companion_experiences.title_hi  TEXT  optional
+companion_experiences.description  TEXT  required
+companion_experiences.duration_minutes  INTEGER  required
+companion_experiences.price_minor  INTEGER  optional
+companion_experiences.meeting_area_label  TEXT  optional
+companion_experiences.max_guests  INTEGER  optional  [2]
+companion_experiences.status  TEXT  optional  ['draft']
+companion_languages.companion_id  TEXT  optional
+companion_languages.language  TEXT  optional
+craft_showcases.id  TEXT  optional
+craft_showcases.artisan_id  TEXT  required
+craft_showcases.title  TEXT  required
+craft_showcases.title_hi  TEXT  optional
+craft_showcases.summary  TEXT  optional
+craft_showcases.tools  TEXT  optional
+craft_showcases.hours_estimate  REAL  optional
+craft_showcases.cover_media_id  TEXT  optional
+craft_showcases.confirmed_by_owner_at  TEXT  optional
+craft_showcases.status  TEXT  optional  ['draft']
+craft_showcases.is_sample  INTEGER  optional  [0]
+craft_showcases.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+craft_steps.showcase_id  TEXT  optional
+craft_steps.position  INTEGER  optional
+craft_steps.text  TEXT  required
+craft_steps.text_hi  TEXT  optional
+craft_steps.media_id  TEXT  optional
+day_plans.id  TEXT  optional
+day_plans.user_id  TEXT  optional
+day_plans.title  TEXT  optional
+day_plans.plan_date  TEXT  optional
+day_plans.start_time  TEXT  required
+day_plans.hours  REAL  required
+day_plans.mode  TEXT  required
+day_plans.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+day_plans.updated_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+day_plan_stops.plan_id  TEXT  optional
+day_plan_stops.position  INTEGER  optional
+day_plan_stops.place_id  TEXT  required
+day_plan_stops.minutes_override  INTEGER  optional
+workshops.id  TEXT  optional
+workshops.artisan_id  TEXT  required
+workshops.title  TEXT  required
+workshops.title_hi  TEXT  optional
+workshops.description  TEXT  required
+workshops.language  TEXT  required
+workshops.duration_minutes  INTEGER  required
+workshops.cost_text  TEXT  required
+workshops.price_minor  INTEGER  optional
+workshops.currency  TEXT  optional  ['INR']
+workshops.max_guests  INTEGER  optional
+workshops.how_to_book  TEXT  required
+workshops.cover_media_id  TEXT  optional
+workshops.confirmed_by_owner_at  TEXT  optional
+workshops.status  TEXT  optional  ['draft']
+workshops.is_sample  INTEGER  optional  [0]
+workshops.updated_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+enquiries.id  TEXT  optional
+enquiries.artisan_id  TEXT  required
+enquiries.workshop_id  TEXT  optional
+enquiries.user_id  TEXT  optional
+enquiries.kind  TEXT  required
+enquiries.message  TEXT  required
+enquiries.contact_back  TEXT  required
+enquiries.status  TEXT  optional  ['new']
+enquiries.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+event_categories.id  TEXT  optional
+event_categories.label  TEXT  required
+event_categories.emoji  TEXT  optional
+event_categories.color  TEXT  optional
+events.id  TEXT  optional
+events.category_id  TEXT  required
+events.title  TEXT  required
+events.organiser  TEXT  required
+events.starts_at  TEXT  optional
+events.ends_at  TEXT  optional
+events.expected_text  TEXT  optional
+events.recurring_text  TEXT  optional
+events.venue  TEXT  required
+events.nearest_place_id  TEXT  optional
+events.price_text  TEXT  required
+events.ticket_status  TEXT  required
+events.about  TEXT  required
+events.booking_url  TEXT  optional
+events.booking_site  TEXT  optional
+events.source_url  TEXT  optional
+events.featured  INTEGER  optional  [0]
+events.checked_on  TEXT  required
+events.is_sample  INTEGER  optional  [0]
+events.updated_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+event_attendance.user_id  TEXT  optional
+event_attendance.event_id  TEXT  optional
+event_attendance.going  INTEGER  optional  [0]
+event_attendance.attended  INTEGER  optional  [0]
+event_includes.event_id  TEXT  optional
+event_includes.position  INTEGER  optional
+event_includes.text  TEXT  required
+event_reminders.id  TEXT  optional
+event_reminders.user_id  TEXT  required
+event_reminders.event_id  TEXT  required
+event_reminders.kind  TEXT  required
+event_reminders.created_at  TEXT  required
+event_tiers.event_id  TEXT  optional
+event_tiers.position  INTEGER  optional
+event_tiers.name  TEXT  required
+event_tiers.price_text  TEXT  required
+event_tiers.status  TEXT  required
+event_tiers.note  TEXT  optional
+follows.follower_id  TEXT  optional
+follows.target_id  TEXT  optional
+follows.state  TEXT  optional  ['accepted']
+follows.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+local_friends.user_id  TEXT  optional
+local_friends.area  TEXT  required
+local_friends.about  TEXT  required
+local_friends.years_in_city  INTEGER  optional
+local_friends.price_minor  INTEGER  required
+local_friends.price_unit  TEXT  required
+local_friends.rating  REAL  optional
+local_friends.review_count  INTEGER  optional  [0]
+local_friends.hosted_count  INTEGER  optional  [0]
+local_friends.response_rate  REAL  optional
+local_friends.cancel_rate  REAL  optional
+local_friends.last_trip_at  TEXT  optional
+local_friends.member_since  TEXT  optional
+local_friends.tier_current  TEXT  optional
+local_friends.tier_since  TEXT  optional
+local_friends.tier_warning_to  TEXT  optional
+local_friends.tier_warning_at  TEXT  optional
+local_friends.listed  INTEGER  optional  [1]
+local_friends.is_sample  INTEGER  optional  [0]
+travel_groups.id  TEXT  optional
+travel_groups.name  TEXT  required
+travel_groups.type  TEXT  required
+travel_groups.destination  TEXT  required
+travel_groups.start_date  TEXT  required
+travel_groups.end_date  TEXT  required
+travel_groups.description  TEXT  optional  ['']
+travel_groups.max_members  INTEGER  required
+travel_groups.leader_id  TEXT  required
+travel_groups.invite_code  TEXT  required
+travel_groups.solo  INTEGER  optional  [0]
+travel_groups.local_friend_id  TEXT  optional
+travel_groups.is_sample  INTEGER  optional  [0]
+travel_groups.created_at  TEXT  required
+group_itinerary_items.id  TEXT  optional
+group_itinerary_items.group_id  TEXT  required
+group_itinerary_items.day  INTEGER  required
+group_itinerary_items.time  TEXT  required
+group_itinerary_items.title  TEXT  required
+group_itinerary_items.place  TEXT  optional
+group_itinerary_items.place_id  TEXT  optional
+group_itinerary_items.note  TEXT  optional
+group_join_requests.id  TEXT  optional
+group_join_requests.group_id  TEXT  required
+group_join_requests.user_id  TEXT  required
+group_join_requests.message  TEXT  optional
+group_join_requests.status  TEXT  optional  ['pending']
+group_join_requests.created_at  TEXT  required
+group_members.group_id  TEXT  optional
+group_members.user_id  TEXT  optional
+group_members.joined_at  TEXT  optional
+group_polls.id  TEXT  optional
+group_polls.group_id  TEXT  required
+group_polls.by_user  TEXT  required
+group_polls.question  TEXT  required
+group_polls.multi  INTEGER  optional  [0]
+group_polls.closed  INTEGER  optional  [0]
+group_polls.created_at  TEXT  required
+group_messages.id  TEXT  optional
+group_messages.group_id  TEXT  required
+group_messages.kind  TEXT  optional  ['text']
+group_messages.by_user  TEXT  optional
+group_messages.body  TEXT  optional
+group_messages.poll_id  TEXT  optional
+group_messages.created_at  TEXT  required
+group_poll_options.id  TEXT  optional
+group_poll_options.poll_id  TEXT  required
+group_poll_options.position  INTEGER  required
+group_poll_options.text  TEXT  required
+group_poll_votes.option_id  TEXT  optional
+group_poll_votes.user_id  TEXT  optional
+group_suggestions.id  TEXT  optional
+group_suggestions.group_id  TEXT  required
+group_suggestions.by_user  TEXT  required
+group_suggestions.kind  TEXT  required
+group_suggestions.target_item_id  TEXT  optional
+group_suggestions.proposed_json  TEXT  optional
+group_suggestions.reason  TEXT  required
+group_suggestions.status  TEXT  optional  ['pending']
+group_suggestions.decision_comment  TEXT  optional
+group_suggestions.decided_at  TEXT  optional
+group_suggestions.created_at  TEXT  required
+group_vibes.group_id  TEXT  optional
+group_vibes.vibe  TEXT  optional
+hidden_spots.id  TEXT  optional
+hidden_spots.place_id  TEXT  optional
+hidden_spots.name  TEXT  required
+hidden_spots.name_hi  TEXT  optional
+hidden_spots.description  TEXT  required
+hidden_spots.why_it_matters  TEXT  optional  ['']
+hidden_spots.note  TEXT  optional
+hidden_spots.sensitive  INTEGER  optional  [0]
+hidden_spots.lat  REAL  optional
+hidden_spots.lng  REAL  optional
+hidden_spots.area_label  TEXT  optional
+hidden_spots.status  TEXT  optional  ['pending']
+hidden_spots.submitted_by  TEXT  optional
+hidden_spots.sourced_by  TEXT  optional
+hidden_spots.moderated_by  TEXT  optional
+hidden_spots.moderated_at  TEXT  optional
+hidden_spots.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+trails.id  TEXT  optional
+trails.title  TEXT  required
+trails.title_hi  TEXT  optional
+trails.theme  TEXT  required
+trails.approx_minutes  INTEGER  required
+trails.stamp_media_id  TEXT  optional
+trails.status  TEXT  optional  ['draft']
+trails.is_sample  INTEGER  optional  [0]
+trails.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+trails.updated_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+journeys.id  TEXT  optional
+journeys.user_id  TEXT  required
+journeys.day  TEXT  required
+journeys.trail_id  TEXT  optional
+journeys.note  TEXT  optional  ['']
+journeys.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+journey_places.journey_id  TEXT  optional
+journey_places.position  INTEGER  optional
+journey_places.place_id  TEXT  required
+live_sessions.id  TEXT  optional
+live_sessions.user_id  TEXT  required
+live_sessions.title  TEXT  optional
+live_sessions.trail_id  TEXT  optional
+live_sessions.visibility  TEXT  optional  ['followers']
+live_sessions.started_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+live_sessions.ended_at  TEXT  optional
+live_events.id  INTEGER  optional
+live_events.session_id  TEXT  required
+live_events.kind  TEXT  required
+live_events.ref_id  TEXT  optional
+live_events.caption  TEXT  optional
+live_events.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+live_messages.id  INTEGER  optional
+live_messages.session_id  TEXT  required
+live_messages.user_id  TEXT  required
+live_messages.body  TEXT  required
+live_messages.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+local_friend_expertise.user_id  TEXT  optional
+local_friend_expertise.topic  TEXT  optional
+local_friend_languages.user_id  TEXT  optional
+local_friend_languages.language  TEXT  optional
+local_friend_reports.id  TEXT  optional
+local_friend_reports.kind  TEXT  required
+local_friend_reports.about_user  TEXT  required
+local_friend_reports.by_user  TEXT  optional
+local_friend_reports.body  TEXT  required
+local_friend_reports.status  TEXT  optional  ['open']
+local_friend_reports.created_at  TEXT  required
+local_requests.id  TEXT  optional
+local_requests.local_id  TEXT  required
+local_requests.by_user  TEXT  required
+local_requests.group_id  TEXT  optional
+local_requests.start_date  TEXT  required
+local_requests.end_date  TEXT  required
+local_requests.message  TEXT  required
+local_requests.status  TEXT  optional  ['pending']
+local_requests.reply  TEXT  optional
+local_requests.created_at  TEXT  required
+local_requests.decided_at  TEXT  optional
+local_verification_history.id  INTEGER  optional
+local_verification_history.user_id  TEXT  required
+local_verification_history.status  TEXT  required
+local_verification_history.reason  TEXT  optional
+local_verification_history.at  TEXT  required
+local_verification_history.by_name  TEXT  optional
+local_verifications.user_id  TEXT  optional
+local_verifications.provider  TEXT  required
+local_verifications.document  TEXT  required
+local_verifications.masked_id  TEXT  required
+local_verifications.verified_at  TEXT  required
+local_verifications.status  TEXT  optional  ['verified']
+local_verifications.reason  TEXT  optional
+music_tracks.id  TEXT  optional
+music_tracks.title  TEXT  required
+music_tracks.media_id  TEXT  required
+music_tracks.owner  TEXT  required
+music_tracks.permitted_use  TEXT  required
+music_tracks.licence_note  TEXT  required
+memories.id  TEXT  optional
+memories.user_id  TEXT  required
+memories.title  TEXT  optional
+memories.day  TEXT  optional
+memories.music_track_id  TEXT  optional
+memories.visibility  TEXT  optional  ['private']
+memories.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+memory_moments.memory_id  TEXT  optional
+memory_moments.position  INTEGER  optional
+memory_moments.media_id  TEXT  required
+memory_moments.caption  TEXT  optional
+memory_moments.place_id  TEXT  optional
+memory_moments.face_visible  INTEGER  optional  [0]
+memory_moments.face_blurred  INTEGER  optional  [0]
+memory_moments.uncertain  INTEGER  optional  [0]
+moderation_actions.id  INTEGER  optional
+moderation_actions.target_type  TEXT  required
+moderation_actions.target_id  TEXT  required
+moderation_actions.action  TEXT  required
+moderation_actions.by_user_id  TEXT  optional
+moderation_actions.by_name  TEXT  optional
+moderation_actions.reason  TEXT  optional
+moderation_actions.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+offline_packs.id  TEXT  optional
+offline_packs.scope_type  TEXT  required
+offline_packs.scope_id  TEXT  required
+offline_packs.title  TEXT  required
+offline_packs.version  INTEGER  optional  [1]
+offline_packs.size_bytes  INTEGER  optional
+offline_packs.manifest_json  TEXT  required
+offline_packs.updated_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+onboarding_drafts.id  TEXT  optional
+onboarding_drafts.artisan_id  TEXT  optional
+onboarding_drafts.audio_media_id  TEXT  optional
+onboarding_drafts.photo_media_id  TEXT  optional
+onboarding_drafts.spoken_lang  TEXT  optional
+onboarding_drafts.transcript  TEXT  optional
+onboarding_drafts.draft_json  TEXT  required
+onboarding_drafts.uncertain_fields_json  TEXT  optional  ['[]']
+onboarding_drafts.provider  TEXT  optional  ['mock']
+onboarding_drafts.photo_shows_face  INTEGER  optional  [0]
+onboarding_drafts.status  TEXT  optional  ['draft']
+onboarding_drafts.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+onboarding_drafts.updated_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+stories.id  TEXT  optional
+stories.place_id  TEXT  required
+stories.title  TEXT  required
+stories.title_hi  TEXT  optional
+stories.source_type  TEXT  required
+stories.source_ref  TEXT  optional
+stories.author  TEXT  optional
+stories.told_by  TEXT  optional
+stories.rights_owner  TEXT  required
+stories.rights_permitted_use  TEXT  required
+stories.verified_by  TEXT  optional
+stories.verified_at  TEXT  optional
+stories.status  TEXT  optional  ['draft']
+stories.is_sample  INTEGER  optional  [0]
+stories.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+stories.updated_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+panoramas.id  TEXT  optional
+panoramas.place_id  TEXT  required
+panoramas.media_id  TEXT  required
+panoramas.captured_by  TEXT  optional
+panoramas.captured_at  TEXT  optional
+panoramas.device  TEXT  optional
+panoramas.heading_deg  REAL  optional
+panoramas.is_preview  INTEGER  optional  [0]
+panoramas.illustrative  INTEGER  optional  [0]
+panoramas.status  TEXT  optional  ['draft']
+panoramas.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+panorama_hotspots.id  TEXT  optional
+panorama_hotspots.panorama_id  TEXT  required
+panorama_hotspots.yaw  REAL  required
+panorama_hotspots.pitch  REAL  required
+panorama_hotspots.label  TEXT  required
+panorama_hotspots.label_hi  TEXT  optional
+panorama_hotspots.story_id  TEXT  optional
+panorama_hotspots.place_id  TEXT  optional
+passport_stamps.id  TEXT  optional
+passport_stamps.user_id  TEXT  required
+passport_stamps.kind  TEXT  required
+passport_stamps.place_id  TEXT  optional
+passport_stamps.trail_id  TEXT  optional
+passport_stamps.method  TEXT  optional  ['manual']
+passport_stamps.stamped_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+payments.id  TEXT  optional
+payments.booking_id  TEXT  required
+payments.provider  TEXT  required
+payments.provider_ref  TEXT  required
+payments.amount_minor  INTEGER  required
+payments.currency  TEXT  optional  ['INR']
+payments.status  TEXT  optional  ['created']
+payments.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+payments.updated_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+phrases.id  TEXT  optional
+phrases.en  TEXT  required
+phrases.hi  TEXT  required
+phrases.transliteration  TEXT  optional
+phrases.is_sample  INTEGER  optional  [0]
+place_facts.id  INTEGER  optional
+place_facts.place_id  TEXT  required
+place_facts.kind  TEXT  required
+place_facts.text  TEXT  required
+place_facts.text_hi  TEXT  optional
+place_facts.verified_by  TEXT  optional
+place_facts.verified_at  TEXT  optional
+place_facts.position  INTEGER  optional  [0]
+place_photos.place_id  TEXT  optional
+place_photos.media_id  TEXT  optional
+place_photos.position  INTEGER  optional  [0]
+place_recognition_refs.id  TEXT  optional
+place_recognition_refs.place_id  TEXT  required
+place_recognition_refs.media_id  TEXT  required
+place_recognition_refs.description  TEXT  optional
+place_sources.place_id  TEXT  optional
+place_sources.url  TEXT  optional
+place_tips.place_id  TEXT  optional
+place_tips.position  INTEGER  optional
+place_tips.text  TEXT  required
+place_tips.text_hi  TEXT  optional
+posts.id  TEXT  optional
+posts.author_id  TEXT  required
+posts.kind  TEXT  optional  ['note']
+posts.body  TEXT  required
+posts.visibility  TEXT  optional  ['followers']
+posts.place_id  TEXT  optional
+posts.memory_id  TEXT  optional
+posts.hidden_spot_id  TEXT  optional
+posts.hidden  INTEGER  optional  [0]
+posts.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+post_comments.id  TEXT  optional
+post_comments.post_id  TEXT  required
+post_comments.user_id  TEXT  required
+post_comments.body  TEXT  required
+post_comments.hidden  INTEGER  optional  [0]
+post_comments.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+post_likes.user_id  TEXT  optional
+post_likes.post_id  TEXT  optional
+post_likes.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+post_media.post_id  TEXT  optional
+post_media.media_id  TEXT  optional
+post_media.position  INTEGER  optional  [0]
+post_shares.id  TEXT  optional
+post_shares.post_id  TEXT  required
+post_shares.user_id  TEXT  optional
+post_shares.channel  TEXT  optional  ['link']
+post_shares.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+qr_codes.code  TEXT  optional
+qr_codes.label  TEXT  required
+qr_codes.target_path  TEXT  required
+qr_codes.place_id  TEXT  optional
+qr_codes.active  INTEGER  optional  [1]
+qr_codes.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+qr_scans.id  INTEGER  optional
+qr_scans.code  TEXT  required
+qr_scans.scanned_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+refunds.id  TEXT  optional
+refunds.payment_id  TEXT  required
+refunds.amount_minor  INTEGER  required
+refunds.reason  TEXT  required
+refunds.status  TEXT  optional  ['requested']
+refunds.requested_by  TEXT  optional
+refunds.provider_ref  TEXT  optional
+refunds.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+refunds.processed_at  TEXT  optional
+rental_shops.id  TEXT  optional
+rental_shops.name  TEXT  required
+rental_shops.name_hi  TEXT  optional
+rental_shops.lat  REAL  required
+rental_shops.lng  REAL  required
+rental_shops.area  TEXT  optional
+rental_shops.phone  TEXT  required
+rental_shops.hours_text  TEXT  optional
+rental_shops.merchant_id  TEXT  optional
+rental_shops.verified_by  TEXT  optional
+rental_shops.verified_at  TEXT  optional
+rental_shops.status  TEXT  optional  ['draft']
+rental_shops.is_sample  INTEGER  optional  [0]
+rental_shops.updated_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+rental_offers.id  TEXT  optional
+rental_offers.shop_id  TEXT  required
+rental_offers.vehicle_kind  TEXT  required
+rental_offers.model  TEXT  optional
+rental_offers.price_minor  INTEGER  optional
+rental_offers.per  TEXT  optional  ['day']
+rental_offers.deposit_minor  INTEGER  optional
+rental_offers.notes  TEXT  optional
+rental_offers.checked_at  TEXT  optional
+reports.id  TEXT  optional
+reports.reporter_id  TEXT  required
+reports.target_type  TEXT  required
+reports.target_id  TEXT  required
+reports.reason  TEXT  required
+reports.status  TEXT  optional  ['open']
+reports.handled_by  TEXT  optional
+reports.handled_at  TEXT  optional
+reports.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+saved_items.user_id  TEXT  optional
+saved_items.item_type  TEXT  optional
+saved_items.item_id  TEXT  optional
+saved_items.created_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+sessions.token_hash  TEXT  optional
+sessions.user_id  TEXT  required
+sessions.expires_at  TEXT  required
+stays.id  TEXT  optional
+stays.name  TEXT  required
+stays.name_hi  TEXT  optional
+stays.kind  TEXT  optional  ['hotel']
+stays.description  TEXT  optional
+stays.lat  REAL  required
+stays.lng  REAL  required
+stays.area  TEXT  optional
+stays.address  TEXT  optional
+stays.phone  TEXT  optional
+stays.nearest_place_id  TEXT  optional
+stays.cover_media_id  TEXT  optional
+stays.sustainable  INTEGER  optional  [0]
+stays.sustainability_notes  TEXT  optional
+stays.merchant_id  TEXT  optional
+stays.verified_by  TEXT  optional
+stays.verified_at  TEXT  optional
+stays.status  TEXT  optional  ['draft']
+stays.is_sample  INTEGER  optional  [0]
+stays.updated_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+stay_prices.id  INTEGER  optional
+stay_prices.stay_id  TEXT  required
+stay_prices.source_id  TEXT  required
+stay_prices.room_type  TEXT  optional
+stay_prices.price_minor  INTEGER  required
+stay_prices.currency  TEXT  optional  ['INR']
+stay_prices.for_date  TEXT  optional
+stay_prices.url  TEXT  optional
+stay_prices.checked_at  TEXT  required
+stay_sustainability.stay_id  TEXT  optional
+stay_sustainability.practice  TEXT  optional
+stay_sustainability.verified_by  TEXT  optional
+stay_sustainability.verified_at  TEXT  optional
+story_texts.story_id  TEXT  optional
+story_texts.lang  TEXT  optional
+story_texts.variant  TEXT  optional  ['standard']
+story_texts.body  TEXT  required
+story_texts.checked  INTEGER  optional  [0]
+story_texts.checked_by  TEXT  optional
+story_texts.checked_at  TEXT  optional
+story_audio.id  TEXT  optional
+story_audio.story_id  TEXT  required
+story_audio.lang  TEXT  required
+story_audio.variant  TEXT  optional  ['standard']
+story_audio.media_id  TEXT  required
+story_audio.voice  TEXT  required
+story_audio.narrator  TEXT  optional
+trail_progress.user_id  TEXT  optional
+trail_progress.trail_id  TEXT  optional
+trail_progress.last_stop_position  INTEGER  optional  [0]
+trail_progress.started_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+trail_progress.completed_at  TEXT  optional
+trail_stops.trail_id  TEXT  optional
+trail_stops.position  INTEGER  optional
+trail_stops.place_id  TEXT  required
+trail_stops.audio_story_id  TEXT  optional
+trail_stops.arrive_radius_m  INTEGER  optional  [50]
+trail_stops.note  TEXT  optional
+traveller_profiles.user_id  TEXT  optional
+traveller_profiles.city  TEXT  optional
+traveller_profiles.travel_style  TEXT  optional
+traveller_profiles.color  TEXT  optional
+traveller_profiles.guest_rating  REAL  optional
+traveller_profiles.guest_review_count  INTEGER  optional  [0]
+traveller_profiles.is_sample  INTEGER  optional  [0]
+trip_reviews.id  TEXT  optional
+trip_reviews.trip_group_id  TEXT  optional
+trip_reviews.from_user  TEXT  required
+trip_reviews.to_user  TEXT  required
+trip_reviews.direction  TEXT  required
+trip_reviews.stars  INTEGER  required
+trip_reviews.categories_json  TEXT  optional
+trip_reviews.tags_json  TEXT  optional  ['[]']
+trip_reviews.body  TEXT  optional
+trip_reviews.historic  INTEGER  optional  [0]
+trip_reviews.trip_end  TEXT  optional
+trip_reviews.reply_text  TEXT  optional
+trip_reviews.reply_at  TEXT  optional
+trip_reviews.created_at  TEXT  required
+user_badges.user_id  TEXT  optional
+user_badges.badge_id  TEXT  optional
+user_badges.earned_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+user_badges.featured  INTEGER  optional  [0]
+user_roles.user_id  TEXT  optional
+user_roles.role  TEXT  optional
+user_roles.granted_at  TEXT  optional  [strftime('%Y-%m-%dT%H:%M:%SZ','now')]
+verification_appeals.id  TEXT  optional
+verification_appeals.user_id  TEXT  required
+verification_appeals.body  TEXT  required
+verification_appeals.status  TEXT  optional  ['open']
+verification_appeals.created_at  TEXT  required
+workshop_sessions.id  TEXT  optional
+workshop_sessions.workshop_id  TEXT  required
+workshop_sessions.starts_at  TEXT  required
+workshop_sessions.seats_total  INTEGER  required
+workshop_sessions.seats_taken  INTEGER  optional  [0]

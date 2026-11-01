@@ -30,5 +30,5 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules", "pwa", "pratik 360 page", "pratik- art and em", "ABC(AR&VR Stories)", "Itinerary"]
+  "exclude": ["node_modules", "pwa", "pratik 360 page", "pratik- art and em", "ABC(AR&VR Stories)", "Itinerary","miras-media-shareable"]
 }

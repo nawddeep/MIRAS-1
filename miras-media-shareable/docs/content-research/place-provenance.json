@@ -1,0 +1,137 @@
+[
+  {
+    "id": "city-palace",
+    "historicalSource": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/city-palace",
+    "coordinateSource": "https://en.wikipedia.org/wiki/City_Palace,_Udaipur",
+    "coordinateStatus": "area reference; entrance unverified",
+    "durationStatus": "editorial estimate",
+    "mediaStatus": "Openly licensed place photograph(s); see content/media.json and docs/image-research/imported.json",
+    "checkedAt": "2026-10-30T15:30:00.000Z"
+  },
+  {
+    "id": "pichhola",
+    "historicalSource": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/lake-pichola",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Lake_Pichola",
+    "coordinateStatus": "area reference; entrance unverified",
+    "durationStatus": "editorial estimate",
+    "mediaStatus": "Openly licensed place photograph(s); see content/media.json and docs/image-research/imported.json",
+    "checkedAt": "2026-10-30T15:30:00.000Z"
+  },
+  {
+    "id": "jagdish-temple",
+    "historicalSource": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/jagdish-temple",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Jagdish_Temple,_Udaipur",
+    "coordinateStatus": "area reference; entrance unverified",
+    "durationStatus": "editorial estimate",
+    "mediaStatus": "Openly licensed place photograph(s); see content/media.json and docs/image-research/imported.json",
+    "checkedAt": "2026-10-30T15:30:00.000Z"
+  },
+  {
+    "id": "saheliyon-ki-bari",
+    "historicalSource": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/saheliyon-ki-bari",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Saheliyon-ki-Bari",
+    "coordinateStatus": "area reference; entrance unverified",
+    "durationStatus": "editorial estimate",
+    "mediaStatus": "Openly licensed place photograph(s); see content/media.json and docs/image-research/imported.json",
+    "checkedAt": "2026-10-30T15:30:00.000Z"
+  },
+  {
+    "id": "sajjangarh",
+    "historicalSource": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/monsoon-palace",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Monsoon_Palace",
+    "coordinateStatus": "area reference; entrance unverified",
+    "durationStatus": "editorial estimate",
+    "mediaStatus": "Openly licensed place photograph(s); see content/media.json and docs/image-research/imported.json",
+    "checkedAt": "2026-10-30T15:30:00.000Z"
+  },
+  {
+    "id": "fateh-sagar",
+    "historicalSource": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/fateh-sagar-lake",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Fateh_Sagar_Lake",
+    "coordinateStatus": "area reference; entrance unverified",
+    "durationStatus": "editorial estimate",
+    "mediaStatus": "Openly licensed place photograph(s); see content/media.json and docs/image-research/imported.json",
+    "checkedAt": "2026-10-30T15:30:00.000Z"
+  },
+  {
+    "id": "bagore-ki-haveli",
+    "historicalSource": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/bagore-ki-haveli",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Bagore_Ki_Haveli",
+    "coordinateStatus": "area reference; entrance unverified",
+    "durationStatus": "editorial estimate",
+    "mediaStatus": "Openly licensed place photograph(s); see content/media.json and docs/image-research/imported.json",
+    "checkedAt": "2026-10-30T15:30:00.000Z"
+  },
+  {
+    "id": "badi-lake",
+    "historicalSource": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/badi-lake",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Lake_Badi",
+    "coordinateStatus": "area reference; entrance unverified",
+    "durationStatus": "editorial estimate",
+    "mediaStatus": "Openly licensed place photograph(s); see content/media.json and docs/image-research/imported.json",
+    "checkedAt": "2026-10-30T15:30:00.000Z"
+  },
+  {
+    "id": "ahar-cenotaphs",
+    "historicalSource": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/ahar-cenotaphs",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Ahar_Cenotaphs",
+    "coordinateStatus": "area reference; entrance unverified",
+    "durationStatus": "editorial estimate",
+    "mediaStatus": "Openly licensed place photograph(s); see content/media.json and docs/image-research/imported.json",
+    "checkedAt": "2026-10-30T15:30:00.000Z"
+  },
+  {
+    "id": "ahar-museum",
+    "historicalSource": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/ahar-museum",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Ahar,_Rajasthan",
+    "coordinateStatus": "area reference; entrance unverified",
+    "durationStatus": "editorial estimate",
+    "mediaStatus": "Openly licensed place photograph(s); see content/media.json and docs/image-research/imported.json",
+    "checkedAt": "2026-10-30T15:30:00.000Z"
+  },
+  {
+    "id": "shilpgram",
+    "historicalSource": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/shilpgram",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Shilpgram,_Udaipur",
+    "coordinateStatus": "area reference; entrance unverified",
+    "durationStatus": "editorial estimate",
+    "mediaStatus": "Openly licensed place photograph(s); see content/media.json and docs/image-research/imported.json",
+    "checkedAt": "2026-10-30T15:30:00.000Z"
+  },
+  {
+    "id": "moti-magri",
+    "historicalSource": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/moti-magri",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Moti_Magri",
+    "coordinateStatus": "area reference; entrance unverified",
+    "durationStatus": "editorial estimate",
+    "mediaStatus": "Openly licensed place photograph(s); see content/media.json and docs/image-research/imported.json",
+    "checkedAt": "2026-10-30T15:30:00.000Z"
+  },
+  {
+    "id": "doodh-talai",
+    "historicalSource": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/dudh-talai-lake",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Doodh_Talai_Lake",
+    "coordinateStatus": "area reference; entrance unverified",
+    "durationStatus": "editorial estimate",
+    "mediaStatus": "Openly licensed place photograph(s); see content/media.json and docs/image-research/imported.json",
+    "checkedAt": "2026-10-30T15:30:00.000Z"
+  },
+  {
+    "id": "udai-sagar",
+    "historicalSource": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/udai-sagar-lake",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Udaisagar_Lake",
+    "coordinateStatus": "area reference; entrance unverified",
+    "durationStatus": "editorial estimate",
+    "mediaStatus": "Openly licensed place photograph(s); see content/media.json and docs/image-research/imported.json",
+    "checkedAt": "2026-10-30T15:30:00.000Z"
+  },
+  {
+    "id": "lok-kala-mandal",
+    "historicalSource": "https://lokkalamandal.com/",
+    "coordinateSource": "https://en.wikipedia.org/wiki/Bharatiya_Lok_Kala_Mandal",
+    "coordinateStatus": "area reference; entrance unverified",
+    "durationStatus": "editorial estimate",
+    "mediaStatus": "Openly licensed place photograph(s); see content/media.json and docs/image-research/imported.json",
+    "checkedAt": "2026-10-30T15:30:00.000Z"
+  }
+]

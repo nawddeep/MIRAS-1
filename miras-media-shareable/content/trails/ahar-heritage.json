@@ -1,0 +1,11 @@
+{
+  "id": "ahar-heritage",
+  "title": "Ahar: archaeology and remembrance",
+  "theme": "Ahar Museum \u2192 Ahar Cenotaphs. Suggested pairing; confirm both entrances and local access before walking. Duration is an estimate.",
+  "placeIds": [
+    "ahar-museum",
+    "ahar-cenotaphs"
+  ],
+  "approxMinutes": 120,
+  "isSample": false
+}

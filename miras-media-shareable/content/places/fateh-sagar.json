@@ -1,0 +1,31 @@
+{
+  "id": "fateh-sagar",
+  "slug": "fateh-sagar",
+  "name": "Fateh Sagar Lake",
+  "name_hi": "फतह सागर झील",
+  "category": "Lake",
+  "lat": 24.6,
+  "lng": 73.67,
+  "summary": "An artificial lake northwest of the old city, associated with successive water-building projects.",
+  "visitTips": [
+    "Confirm admission, opening hours and the correct entrance before travelling.",
+    "Allow extra time for steps, heat and busy streets; ask staff about access needs."
+  ],
+  "openingHours": "Check with the venue before visiting; current admission hours are not confirmed.",
+  "typicalVisitMinutes": 60,
+  "photos": [
+    "/media/places/fateh-sagar-2.webp",
+    "/media/places/fateh-sagar-1.webp"
+  ],
+  "accessibility": {
+    "stepFree": "unknown",
+    "notes": "Step-free routes and facilities have not been checked in person."
+  },
+  "status": "published",
+  "isSample": false,
+  "sourceRefs": [
+    "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/fateh-sagar-lake"
+  ],
+  "coordinateNote": "Approximate geographic reference, not an entrance pin. Use the named Google Maps listing and confirm access.",
+  "coordinateSource": "https://en.wikipedia.org/wiki/Fateh_Sagar_Lake"
+}

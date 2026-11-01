@@ -1,0 +1,163 @@
+import fs from "node:fs";
+import path from "node:path";
+import { chromium } from "@playwright/test";
+
+function createSvg(isMaskable: boolean): string {
+  // Safe zone for maskable is the central 80% circle
+  const scale = isMaskable ? 0.76 : 0.88;
+  const translate = isMaskable ? 61.44 : 30.72;
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#131B31"/>
+      <stop offset="60%" stop-color="#1B2645"/>
+      <stop offset="100%" stop-color="#131B31"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFBE6B"/>
+      <stop offset="45%" stop-color="#F0A140"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="lakeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8FB0D6"/>
+      <stop offset="100%" stop-color="#4A5A82"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Solid Background -->
+  <rect width="512" height="512" fill="url(#skyGrad)"/>
+
+  <!-- Scaled Content -->
+  <g transform="translate(${translate}, ${translate}) scale(${scale})">
+    <!-- Outer Decorative Arch / Jharokha Motif -->
+    <path d="M 256 32
+             C 268 64, 290 84, 320 96
+             C 340 104, 380 120, 396 160
+             C 410 196, 400 240, 400 300
+             C 400 370, 400 420, 400 440
+             C 400 448, 392 456, 384 456
+             L 128 456
+             C 120 456, 112 448, 112 440
+             C 112 420, 112 370, 112 300
+             C 112 240, 102 196, 116 160
+             C 132 120, 172 104, 192 96
+             C 222 84, 244 64, 256 32 Z"
+          fill="none"
+          stroke="url(#goldGrad)"
+          stroke-width="10"
+          stroke-linejoin="round"/>
+
+    <!-- Inner cusped dome line -->
+    <path d="M 256 64
+             C 264 90, 280 108, 304 120
+             C 328 132, 360 148, 372 184
+             C 382 216, 376 250, 376 300
+             L 376 432
+             L 136 432
+             L 136 300
+             C 136 250, 130 216, 140 184
+             C 152 148, 184 132, 208 120
+             C 232 108, 248 90, 256 64 Z"
+          fill="#17213C"
+          stroke="url(#goldGrad)"
+          stroke-width="3"
+          stroke-opacity="0.4"/>
+
+    <!-- Kalash / Finial Spire -->
+    <circle cx="256" cy="24" r="6" fill="#FFBE6B"/>
+    <path d="M 256 12 L 256 24" stroke="#FFBE6B" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Sun Ray / Heritage Arch Rosette -->
+    <circle cx="256" cy="180" r="48" fill="url(#goldGrad)" opacity="0.15"/>
+    <circle cx="256" cy="180" r="32" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-dasharray="6,4"/>
+    <circle cx="256" cy="180" r="14" fill="url(#goldGrad)"/>
+
+    <!-- Udaipur Palace Skyline / Jharokha Silhouette -->
+    <path d="M 170 380
+             L 170 340
+             C 170 330, 180 320, 190 320
+             C 200 320, 210 330, 210 340
+             L 210 380 Z"
+          fill="url(#lakeGrad)" opacity="0.8"/>
+
+    <path d="M 302 380
+             L 302 340
+             C 302 330, 312 320, 322 320
+             C 332 320, 342 330, 342 340
+             L 342 380 Z"
+          fill="url(#lakeGrad)" opacity="0.8"/>
+
+    <!-- Central Regal 'M' (MIRAS) in Heritage Style -->
+    <path d="M 180 380
+             L 180 250
+             L 204 250
+             L 256 332
+             L 308 250
+             L 332 250
+             L 332 380
+             L 308 380
+             L 308 288
+             L 266 354
+             C 262 360, 250 360, 246 354
+             L 204 288
+             L 204 380 Z"
+          fill="#F5EEE0"
+          filter="url(#glow)"/>
+
+    <!-- Water Ripples representing Lake Pichhola at the base -->
+    <path d="M 150 410 Q 180 404, 210 410 T 270 410 T 330 410 T 362 410"
+          fill="none" stroke="url(#lakeGrad)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 170 422 Q 200 418, 230 422 T 290 422 T 342 422"
+          fill="none" stroke="url(#lakeGrad)" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  </g>
+</svg>`;
+}
+
+async function generate() {
+  const iconsDir = path.resolve(process.cwd(), "public/icons");
+  if (!fs.existsSync(iconsDir)) {
+    fs.mkdirSync(iconsDir, { recursive: true });
+  }
+
+  const standardSvg = createSvg(false);
+  const maskableSvg = createSvg(true);
+
+  // Write SVG files
+  fs.writeFileSync(path.join(iconsDir, "icon.svg"), standardSvg, "utf8");
+  fs.writeFileSync(path.join(iconsDir, "icon-maskable.svg"), maskableSvg, "utf8");
+
+  const browser = await chromium.launch();
+  const page = await browser.newPage();
+
+  async function renderToPng(svgContent: string, width: number, height: number, outPath: string) {
+    await page.setViewportSize({ width, height });
+    const dataUrl = `data:image/svg+xml;utf8,${encodeURIComponent(svgContent)}`;
+    await page.goto(dataUrl);
+    await page.screenshot({ path: outPath, omitBackground: false });
+    console.log(`Generated ${path.basename(outPath)} (${width}x${height})`);
+  }
+
+  // 192x192 & 512x512 standard
+  await renderToPng(standardSvg, 192, 192, path.join(iconsDir, "icon-192.png"));
+  await renderToPng(standardSvg, 512, 512, path.join(iconsDir, "icon-512.png"));
+
+  // 192x192 & 512x512 maskable
+  await renderToPng(maskableSvg, 192, 192, path.join(iconsDir, "icon-maskable-192.png"));
+  await renderToPng(maskableSvg, 512, 512, path.join(iconsDir, "icon-maskable-512.png"));
+
+  // Apple Touch Icon (180x180)
+  await renderToPng(standardSvg, 180, 180, path.join(iconsDir, "apple-touch-icon.png"));
+
+  await browser.close();
+  console.log("All PWA icons generated successfully.");
+}
+
+generate().catch((err) => {
+  console.error("Failed to generate icons:", err);
+  process.exit(1);
+});

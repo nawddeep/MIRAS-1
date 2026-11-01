@@ -1,0 +1,83 @@
+{
+  "contract": "README.md",
+  "targetViewports": [
+    "390x844",
+    "1440x900"
+  ],
+  "accessibility": {
+    "status": "pass",
+    "evidence": "Native labelled account inputs, buttons, journal tabs and follow controls. Tab focus visible under reduced motion in browser smoke; no page errors."
+  },
+  "responsive": {
+    "status": "pass",
+    "evidence": "Account, community, journeys and profile tested at 360/390/1440 with no horizontal overflow."
+  },
+  "contentStates": {
+    "loading": {
+      "status": "pass",
+      "evidence": "Async account feed and journey fetches have visible loading states; browser waits for actual persisted records."
+    },
+    "empty": {
+      "status": "pass",
+      "evidence": "New private account begins with no feed posts, requests or journeys; composer and journey recorder offer next actions."
+    },
+    "error": {
+      "status": "pass",
+      "evidence": "Unit tests reject incorrect passwords, expired/reused recovery codes, malformed photos, body limits and cross-origin mutations. Browser confirms CSRF 403 and future journey date rejection."
+    },
+    "partial": {
+      "status": "pass",
+      "evidence": "Local bookmarks stay on device until explicit account backup; private profiles expose discoverable names but not posts. Unconfirmed artisan milestone remains unavailable."
+    },
+    "success": {
+      "status": "pass",
+      "evidence": "Two-account browser smoke confirms signup, follow approval, private-photo access, persisted comments/likes, collection backups and earned/featured journey milestones."
+    },
+    "permission": {
+      "status": "pass",
+      "evidence": "Guest and non-follower photo requests return 404. Approval grants access; follower removal revokes access immediately. Private featured badges are withheld from non-followers."
+    }
+  },
+  "renderedEvidence": [
+    {
+      "viewport": "390x844",
+      "artifact": "account-390.png",
+      "observation": "Account/community/journey/profile UI captured in isolated test accounts at the target viewport; account credentials and recovery codes excluded."
+    },
+    {
+      "viewport": "390x844",
+      "artifact": "discover-community-390.png",
+      "observation": "Account/community/journey/profile UI captured in isolated test accounts at the target viewport; account credentials and recovery codes excluded."
+    },
+    {
+      "viewport": "390x844",
+      "artifact": "journeys-390.png",
+      "observation": "Account/community/journey/profile UI captured in isolated test accounts at the target viewport; account credentials and recovery codes excluded."
+    },
+    {
+      "viewport": "390x844",
+      "artifact": "profile-390.png",
+      "observation": "Account/community/journey/profile UI captured in isolated test accounts at the target viewport; account credentials and recovery codes excluded."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "account-1440.png",
+      "observation": "Account/community/journey/profile UI captured in isolated test accounts at the target viewport; account credentials and recovery codes excluded."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "discover-community-1440.png",
+      "observation": "Account/community/journey/profile UI captured in isolated test accounts at the target viewport; account credentials and recovery codes excluded."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "journeys-1440.png",
+      "observation": "Account/community/journey/profile UI captured in isolated test accounts at the target viewport; account credentials and recovery codes excluded."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "profile-1440.png",
+      "observation": "Account/community/journey/profile UI captured in isolated test accounts at the target viewport; account credentials and recovery codes excluded."
+    }
+  ]
+}

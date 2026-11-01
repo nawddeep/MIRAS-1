@@ -1,0 +1,15 @@
+{
+  "observations": [
+    "390x844: no page overflow, feature frame 228px",
+    "1440x900: no page overflow, feature frame 228px",
+    "360x800: no page overflow, feature frame 228px"
+  ],
+  "focus": {
+    "tag": "A",
+    "outline": "solid"
+  },
+  "reducedMotion": "pass",
+  "gallery": "pass",
+  "bookmark": "pass",
+  "storageError": "pass"
+}

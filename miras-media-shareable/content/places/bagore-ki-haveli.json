@@ -1,0 +1,31 @@
+{
+  "id": "bagore-ki-haveli",
+  "slug": "bagore-ki-haveli",
+  "name": "Bagore Ki Haveli",
+  "name_hi": "बागोर की हवेली",
+  "category": "Museum",
+  "lat": 24.5796687,
+  "lng": 73.6800357,
+  "summary": "An eighteenth-century mansion beside Gangaur Ghat, now associated with museum displays and cultural performances.",
+  "visitTips": [
+    "Confirm admission, opening hours and the correct entrance before travelling.",
+    "Allow extra time for steps, heat and busy streets; ask staff about access needs."
+  ],
+  "openingHours": "Check with the venue before visiting; current admission hours are not confirmed.",
+  "typicalVisitMinutes": 75,
+  "photos": [
+    "/media/places/bagore-ki-haveli-1.webp",
+    "/media/places/bagore-ki-haveli-2.webp"
+  ],
+  "accessibility": {
+    "stepFree": "unknown",
+    "notes": "Step-free routes and facilities have not been checked in person."
+  },
+  "status": "published",
+  "isSample": false,
+  "sourceRefs": [
+    "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/bagore-ki-haveli"
+  ],
+  "coordinateNote": "Approximate geographic reference, not an entrance pin. Use the named Google Maps listing and confirm access.",
+  "coordinateSource": "https://en.wikipedia.org/wiki/Bagore_Ki_Haveli"
+}
