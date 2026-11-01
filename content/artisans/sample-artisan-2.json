@@ -1,0 +1,24 @@
+{
+  "id": "sample-artisan-2",
+  "name": "Sample Artisan 2",
+  "craft": "SAMPLE craft: textile printing",
+  "description": "SAMPLE: description of Sample Artisan 2's work goes here.",
+  "description_hi": "नमूना: सैंपल कारीगर 2 के काम का विवरण यहाँ आएगा।",
+  "materials": [],
+  "languages": [
+    "Hindi",
+    "English"
+  ],
+  "photos": [
+    "/media/placeholders/artisan-2.svg"
+  ],
+  "contact": "sample-artisan-2@example.invalid",
+  "locationText": "SAMPLE: area in Udaipur",
+  "status": "draft",
+  "consent": {
+    "given": false
+  },
+  "photoRights": "Generated placeholder, owned by Team Impala",
+  "editToken": "sample-edit-token-2-c62a17cb016062cc",
+  "isSample": true
+}

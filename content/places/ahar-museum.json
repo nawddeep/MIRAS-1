@@ -1,0 +1,31 @@
+{
+  "id": "ahar-museum",
+  "slug": "ahar-museum",
+  "name": "Ahar Museum",
+  "name_hi": "आहड़ संग्रहालय",
+  "category": "Museum",
+  "lat": 24.587258,
+  "lng": 73.72155,
+  "summary": "A museum introducing the archaeological heritage of Ahar through material objects and regional collections.",
+  "visitTips": [
+    "Confirm admission, opening hours and the correct entrance before travelling.",
+    "Allow extra time for steps, heat and busy streets; ask staff about access needs."
+  ],
+  "openingHours": "Check with the venue before visiting; current admission hours are not confirmed.",
+  "typicalVisitMinutes": 60,
+  "photos": [
+    "/media/places/ahar-museum-1.webp",
+    "/media/places/ahar-museum-2.webp"
+  ],
+  "accessibility": {
+    "stepFree": "unknown",
+    "notes": "Step-free routes and facilities have not been checked in person."
+  },
+  "status": "published",
+  "isSample": false,
+  "sourceRefs": [
+    "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/ahar-museum"
+  ],
+  "coordinateNote": "Approximate geographic reference, not an entrance pin. Use the named Google Maps listing and confirm access. Ahar-area reference only; museum entrance needs confirmation.",
+  "coordinateSource": "https://en.wikipedia.org/wiki/Ahar,_Rajasthan"
+}

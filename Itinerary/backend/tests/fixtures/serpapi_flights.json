@@ -1,0 +1,23 @@
+{
+  "search_metadata": {"google_flights_url": "https://www.google.com/travel/flights?test=1"},
+  "best_flights": [
+    {
+      "flights": [
+        {"departure_airport": {"name": "Indira Gandhi International Airport", "id": "DEL", "time": "2026-11-10 06:00"},
+         "arrival_airport": {"name": "Maharana Pratap Airport", "id": "UDR", "time": "2026-11-10 07:25"},
+         "duration": 85, "airline": "Test Air", "flight_number": "TA 101"}
+      ],
+      "total_duration": 85, "price": 5432, "type": "One way"
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {"departure_airport": {"id": "DEL", "time": "2026-11-10 09:00"}, "arrival_airport": {"id": "BOM", "time": "2026-11-10 11:10"}, "duration": 130, "airline": "Test Air", "flight_number": "TA 200"},
+        {"departure_airport": {"id": "BOM", "time": "2026-11-10 13:00"}, "arrival_airport": {"id": "UDR", "time": "2026-11-10 14:20"}, "duration": 80, "airline": "Other Air", "flight_number": "OA 7"}
+      ],
+      "layovers": [{"duration": 110, "id": "BOM"}],
+      "total_duration": 320
+    }
+  ]
+}

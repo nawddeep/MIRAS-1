@@ -1,0 +1,36 @@
+[
+  {
+    "id": "city-palace-sample-1",
+    "placeId": "city-palace",
+    "title": "A palace built in layers",
+    "text": "City Palace grew through the work of successive Mewar rulers rather than a single building campaign. Its courtyards and balconies sit above Lake Pichola, connecting royal architecture to the water below. Read the complex as a sequence of additions: a doorway, a court, then another view of the lake.",
+    "language": "en",
+    "sourceType": "history",
+    "sourceRef": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/city-palace",
+    "verifiedBy": "MIRAS automated source check (not field verification)",
+    "verifiedAt": "2026-10-30T15:30:00.000Z",
+    "rights": {
+      "owner": "MIRAS original editorial draft",
+      "permittedUse": "Original paraphrase prepared for MIRAS; source photographs and text are not licensed by this entry."
+    },
+    "updatedAt": "2026-10-30T15:30:00.000Z",
+    "isSample": false
+  },
+  {
+    "id": "city-palace-history-2",
+    "placeId": "city-palace",
+    "title": "Courtyards and changing viewpoints",
+    "text": "A palace courtyard is a pause between enclosed rooms and open views. At City Palace, moving from one space to another makes the complex easier to read than trying to absorb the entire facade at once. Look for how balconies and passageways frame the lake, rather than treating each room as an isolated exhibit.",
+    "language": "en",
+    "sourceType": "history",
+    "sourceRef": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/city-palace",
+    "verifiedBy": "MIRAS automated source check (not field verification)",
+    "verifiedAt": "2026-10-30T15:30:00.000Z",
+    "rights": {
+      "owner": "MIRAS original editorial draft",
+      "permittedUse": "Original paraphrase prepared for MIRAS; source photographs and text are not licensed by this entry."
+    },
+    "updatedAt": "2026-10-30T15:30:00.000Z",
+    "isSample": false
+  }
+]

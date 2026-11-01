@@ -1,0 +1,75 @@
+[
+  {
+    "page": "City_Palace,_Udaipur",
+    "source": "https://en.wikipedia.org/wiki/City_Palace,_Udaipur",
+    "coordinates": "24.576; 73.683"
+  },
+  {
+    "page": "Lake_Pichola",
+    "source": "https://en.wikipedia.org/wiki/Lake_Pichola",
+    "coordinates": "24.572; 73.679"
+  },
+  {
+    "page": "Jagdish_Temple,_Udaipur",
+    "source": "https://en.wikipedia.org/wiki/Jagdish_Temple,_Udaipur",
+    "coordinates": "24.579834000; 73.68386083"
+  },
+  {
+    "page": "Saheliyon-ki-Bari",
+    "source": "https://en.wikipedia.org/wiki/Saheliyon-ki-Bari",
+    "coordinates": "24.60278; 73.68528"
+  },
+  {
+    "page": "Monsoon_Palace",
+    "source": "https://en.wikipedia.org/wiki/Monsoon_Palace",
+    "coordinates": "24.594; 73.639"
+  },
+  {
+    "page": "Fateh_Sagar_Lake",
+    "source": "https://en.wikipedia.org/wiki/Fateh_Sagar_Lake",
+    "coordinates": "24.6; 73.67"
+  },
+  {
+    "page": "Bagore_Ki_Haveli",
+    "source": "https://en.wikipedia.org/wiki/Bagore_Ki_Haveli",
+    "coordinates": "24.5796687; 73.6800357"
+  },
+  {
+    "page": "Badi_Lake",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "page": "Ahar_Cenotaphs",
+    "source": "https://en.wikipedia.org/wiki/Ahar_Cenotaphs",
+    "coordinates": "24.58778; 73.71944"
+  },
+  {
+    "page": "Ahar_Museum",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "page": "Shilpgram,_Udaipur",
+    "source": "https://en.wikipedia.org/wiki/Shilpgram,_Udaipur",
+    "coordinates": "24.612290; 73.661913"
+  },
+  {
+    "page": "Moti_Magri",
+    "source": "https://en.wikipedia.org/wiki/Moti_Magri",
+    "coordinates": "24.59833; 73.68306"
+  },
+  {
+    "page": "Doodh_Talai_Lake",
+    "source": "https://en.wikipedia.org/wiki/Doodh_Talai_Lake",
+    "coordinates": "24.5684295; 73.6847684"
+  },
+  {
+    "page": "Udaisagar_Lake",
+    "source": "https://en.wikipedia.org/wiki/Udaisagar_Lake",
+    "coordinates": "24.570811; 73.821351"
+  },
+  {
+    "page": "Bharatiya_Lok_Kala_Mandal",
+    "source": "https://en.wikipedia.org/wiki/Bharatiya_Lok_Kala_Mandal",
+    "coordinates": "24.5944916; 73.6894614"
+  }
+]

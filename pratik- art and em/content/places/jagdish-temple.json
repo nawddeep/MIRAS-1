@@ -1,0 +1,31 @@
+{
+  "id": "jagdish-temple",
+  "slug": "jagdish-temple",
+  "name": "Jagdish Temple",
+  "name_hi": "जगदीश मंदिर",
+  "category": "Temple",
+  "lat": 24.579834,
+  "lng": 73.68386083,
+  "summary": "A seventeenth-century Vishnu temple at the heart of Udaipur’s old-city streets.",
+  "visitTips": [
+    "Confirm admission, opening hours and the correct entrance before travelling.",
+    "Allow extra time for steps, heat and busy streets; ask staff about access needs."
+  ],
+  "openingHours": "Check with the venue before visiting; current admission hours are not confirmed.",
+  "typicalVisitMinutes": 45,
+  "photos": [
+    "/media/places/jagdish-temple-2.webp",
+    "/media/places/jagdish-temple-1.webp"
+  ],
+  "accessibility": {
+    "stepFree": "unknown",
+    "notes": "Step-free routes and facilities have not been checked in person."
+  },
+  "status": "published",
+  "isSample": false,
+  "sourceRefs": [
+    "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/jagdish-temple"
+  ],
+  "coordinateNote": "Approximate geographic reference, not an entrance pin. Use the named Google Maps listing and confirm access.",
+  "coordinateSource": "https://en.wikipedia.org/wiki/Jagdish_Temple,_Udaipur"
+}

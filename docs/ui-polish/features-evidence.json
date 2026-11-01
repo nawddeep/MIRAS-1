@@ -1,0 +1,53 @@
+{
+  "contract": "contract.md",
+  "targetViewports": [
+    "390x844",
+    "1440x900"
+  ],
+  "accessibility": {
+    "status": "pass",
+    "evidence": "Labelled destination and comment inputs, aria-pressed on follow/like/tabs/privacy, status feedback for share and comments, visible keyboard focus asserted. Buttons and links have 44\u201348px minimum height. Reviewed navy text on ivory and legible preview badges."
+  },
+  "responsive": {
+    "status": "pass",
+    "evidence": "Checked each of seven feature routes plus hub, Home and Profile at 360px, 390px and 1440px. No page overflow. Desktop hub uses two columns; mobile controls wrap. Rendered screenshots inspected locally."
+  },
+  "contentStates": {
+    "loading": {
+      "status": "not-applicable",
+      "reason": "New surfaces render bundled frontend content without asynchronous data requests. External maps and provider pages are separate destinations."
+    },
+    "empty": {
+      "status": "pass",
+      "evidence": "Local hosts, hotels and hidden-location screens explain missing listings/data and offer working map or existing-app links."
+    },
+    "error": {
+      "status": "pass",
+      "evidence": "Unknown feature route returns HTTP 404. Clipboard share failure has browser-address recovery feedback; share feedback asserted."
+    },
+    "partial": {
+      "status": "pass",
+      "evidence": "Existing memories, passport, artisans and trails remain accessible alongside explicitly unavailable account, booking, pricing and location-import integrations."
+    },
+    "success": {
+      "status": "pass",
+      "evidence": "Sample likes, following and comment submission update visibly. Feed tabs change sample copy. Reload resets ephemeral social interactions; privacy toggle updates explanation."
+    },
+    "permission": {
+      "status": "pass",
+      "evidence": "Account visibility clearly states preview-only and does not change permissions or upload memories. No geolocation requested; maps use only entered area."
+    }
+  },
+  "renderedEvidence": [
+    {
+      "viewport": "390x844",
+      "artifact": "feature-discover-community-390.png",
+      "observation": "Mobile community preview: wrapped controls, readable labels, sample disclosure and inline social actions."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "feature-discover-1440.png",
+      "observation": "Desktop feature hub: seven destinations, paired image rows, readable headings and status labels."
+    }
+  ]
+}

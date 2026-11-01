@@ -1,0 +1,36 @@
+[
+  {
+    "id": "sajjangarh-sample-1",
+    "placeId": "sajjangarh",
+    "title": "A palace above the clouds",
+    "text": "Maharana Sajjan Singh commissioned the palace now called Sajjangarh or the Monsoon Palace. An ambitious astronomical purpose was part of its early conception, but the ruler’s death interrupted those plans. Its hilltop position still gives the building its identity: the city and surrounding landscape are seen together from above.",
+    "language": "en",
+    "sourceType": "history",
+    "sourceRef": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/monsoon-palace",
+    "verifiedBy": "MIRAS automated source check (not field verification)",
+    "verifiedAt": "2026-10-30T15:30:00.000Z",
+    "rights": {
+      "owner": "MIRAS original editorial draft",
+      "permittedUse": "Original paraphrase prepared for MIRAS; source photographs and text are not licensed by this entry."
+    },
+    "updatedAt": "2026-10-30T15:30:00.000Z",
+    "isSample": false
+  },
+  {
+    "id": "sajjangarh-history-2",
+    "placeId": "sajjangarh",
+    "title": "Reading Udaipur from above",
+    "text": "A hilltop view changes the scale at which a city can be understood. From Sajjangarh, the relationship between lakes, settlement and surrounding hills becomes more apparent than it is from a narrow old-city lane. This is an invitation to observe the landscape, not a promise of clear visibility in every season.",
+    "language": "en",
+    "sourceType": "history",
+    "sourceRef": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/monsoon-palace",
+    "verifiedBy": "MIRAS automated source check (not field verification)",
+    "verifiedAt": "2026-10-30T15:30:00.000Z",
+    "rights": {
+      "owner": "MIRAS original editorial draft",
+      "permittedUse": "Original paraphrase prepared for MIRAS; source photographs and text are not licensed by this entry."
+    },
+    "updatedAt": "2026-10-30T15:30:00.000Z",
+    "isSample": false
+  }
+]

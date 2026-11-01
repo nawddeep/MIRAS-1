@@ -1,0 +1,6 @@
+[
+  "390px: all frontend routes respond 200 without horizontal overflow",
+  "1440px: all frontend routes respond 200 without horizontal overflow",
+  "360px: all frontend routes respond 200 without horizontal overflow",
+  "Likes, follows, comments, tabs, share feedback and ephemeral reset pass; privacy preview changes; maps query encoding matches user input; unknown route returns 404; keyboard focus visible."
+]

@@ -1,0 +1,22 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type": "Feature", "properties": {
+      "name": "Test Palace Museum", "formatted": "Test Palace Museum, Old City, Udaipur",
+      "lat": 24.57645, "lon": 73.68352, "place_id": "geo_dup_palace",
+      "categories": ["entertainment.museum"], "opening_hours": "Mo-Su 09:30-17:30",
+      "datasource": {"sourcename": "openstreetmap", "raw": {}}
+    }},
+    {"type": "Feature", "properties": {
+      "name": "Test Miniature Studio", "formatted": "Test Miniature Studio, Udaipur",
+      "lat": 24.5812, "lon": 73.6855, "place_id": "geo_studio",
+      "categories": ["commercial.art"], "website": "https://example.org",
+      "contact": {"phone": "+91 00000 00000"},
+      "opening_hours": "Mo-Sa 10:00-19:00; Su off",
+      "datasource": {"sourcename": "openstreetmap", "raw": {}}
+    }},
+    {"type": "Feature", "properties": {
+      "lat": 24.58, "lon": 73.68, "place_id": "geo_unnamed", "categories": ["commercial.art"]
+    }}
+  ]
+}

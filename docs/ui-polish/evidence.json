@@ -1,0 +1,59 @@
+{
+  "contract": "contract.md",
+  "targetViewports": [
+    "390x844",
+    "1440x900",
+    "360x800"
+  ],
+  "accessibility": {
+    "status": "pass",
+    "evidence": "Keyboard Tab exposes skip link with solid focus outline (reduced-motion-focus.png). Search retains label, navigation retains aria-current and gallery selection aria-pressed. Gallery feedback uses status and caption uses polite live region. Reviewed ivory/navy text and dark image scrim; category and toolbar actions retain 44px or larger targets. Reduced motion disables entrance animation and smooth scrolling; browser assertions in review.mjs. Typography revision increases body to 17px, supporting labels to 15\u201316px and sections to 26px; keyboard focus and reduced-motion assertions pass again."
+  },
+  "responsive": {
+    "status": "pass",
+    "evidence": "Rendered home at 360x800, 390x844 and 1440x900; places, stories and profile at 390px and 1440px. No horizontal page overflow. Category supporting text is 16px. Desktop now uses an 880px canvas with two-column feature/tools and three-column discovery tiles. Mobile retains stacked image rows. Long Miniature Painting label wraps cleanly."
+  },
+  "contentStates": {
+    "loading": {
+      "status": "pass",
+      "evidence": "Delayed image requests: stable gallery frame and loading feedback. See gallery-loading.png"
+    },
+    "empty": {
+      "status": "pass",
+      "evidence": "Cleared local storage: collection explains bookmarking and offers Explore places. See collection-empty.png"
+    },
+    "error": {
+      "status": "pass",
+      "evidence": "Storage.setItem throws: bookmark displays Device storage is unavailable. See storage-error.png"
+    },
+    "partial": {
+      "status": "pass",
+      "evidence": "Failed gallery image: frame and other page content remain available; explicit message offers another view. See gallery-partial.png"
+    },
+    "success": {
+      "status": "pass",
+      "evidence": "Bookmark toggles pressed state and City Palace appears in saved collection. See collection-success.png"
+    },
+    "permission": {
+      "status": "not-applicable",
+      "reason": "These home, gallery, navigation and bookmark presentation changes request no device permissions. Camera and microphone permission flows are unchanged and outside this refinement."
+    }
+  },
+  "renderedEvidence": [
+    {
+      "viewport": "390x844",
+      "artifact": "home-390.png",
+      "observation": "Reviewed discovery hierarchy, bilingual labels, image composition and page width; no horizontal overflow."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "home-1440.png",
+      "observation": "Reviewed discovery hierarchy, bilingual labels, image composition and page width; no horizontal overflow."
+    },
+    {
+      "viewport": "360x800",
+      "artifact": "home-360.png",
+      "observation": "Reviewed discovery hierarchy, bilingual labels, image composition and page width; no horizontal overflow."
+    }
+  ]
+}

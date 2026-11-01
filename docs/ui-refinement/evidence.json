@@ -1,0 +1,53 @@
+{
+  "contract": "README.md",
+  "targetViewports": [
+    "390x844",
+    "1440x900"
+  ],
+  "accessibility": {
+    "status": "pass",
+    "evidence": "Keyboard focus is visible; named place actions and five bottom-navigation controls fit within each viewport. Native source/credit disclosures remain keyboard operable. Save pressed state and plan success/failure status are exposed. Night and reduced-motion screenshot reviewed."
+  },
+  "responsive": {
+    "status": "pass",
+    "evidence": "Home, Explore, City Palace, story reader, feature hub and Profile checked at 360x800, 390x844 and 1440x900. No document overflow and all fixed nav links within viewport bounds. Home photo rail intentionally scrolls inside its own container on mobile."
+  },
+  "contentStates": {
+    "loading": {
+      "status": "pass",
+      "evidence": "Server-rendered discovery content and fixed image frames remain visible while hydrating. Shortcut entrances no longer hide category options. Plan reads the device copy after mount; flow assertion waits for persisted selections."
+    },
+    "empty": {
+      "status": "pass",
+      "evidence": "Unmatched Explore search shows Nothing matched your search with a link back to all places; empty planner offers Explore places and manual selection."
+    },
+    "error": {
+      "status": "pass",
+      "evidence": "Simulated Storage.setItem denial produces explicit unsaved-plan feedback without a false success. Screenshot: storage-error.png."
+    },
+    "partial": {
+      "status": "pass",
+      "evidence": "Saved shortlist remains useful when venue hours are unconfirmed. Scheduling explains missing information and links to suggested trails. Screenshot: planner-partial.png."
+    },
+    "success": {
+      "status": "pass",
+      "evidence": "Home recommendation opens City Palace; save appears in Profile; unsave reverses it; Add to plan persists the place and View plan opens a preselected planner. No runtime page errors."
+    },
+    "permission": {
+      "status": "not-applicable",
+      "reason": "Refinement introduces no device-permission prompts. Directions use the entered place name; existing camera entry point is retained without automatically opening a camera."
+    }
+  },
+  "renderedEvidence": [
+    {
+      "viewport": "390x844",
+      "artifact": "hour-7-nosplash-390.png",
+      "observation": "Mobile discovery hierarchy, real photo recommendations, compact shortcuts and fully visible five-tab navigation."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "hour-7-nosplash-1440.png",
+      "observation": "Three recommendation columns and paired editorial trail/craft sections at desktop width."
+    }
+  ]
+}

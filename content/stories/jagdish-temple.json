@@ -1,0 +1,36 @@
+[
+  {
+    "id": "jagdish-temple-sample-1",
+    "placeId": "jagdish-temple",
+    "title": "A temple at the meeting of lanes",
+    "text": "Commissioned by Maharana Jagat Singh I and completed in 1651, Jagdish Temple is dedicated to Vishnu. Its elevated approach and carved architectural surfaces make it a prominent old-city landmark. The temple remains a place of worship, so its history is best encountered alongside respect for the people using it today.",
+    "language": "en",
+    "sourceType": "history",
+    "sourceRef": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/jagdish-temple",
+    "verifiedBy": "MIRAS automated source check (not field verification)",
+    "verifiedAt": "2026-10-30T15:30:00.000Z",
+    "rights": {
+      "owner": "MIRAS original editorial draft",
+      "permittedUse": "Original paraphrase prepared for MIRAS; source photographs and text are not licensed by this entry."
+    },
+    "updatedAt": "2026-10-30T15:30:00.000Z",
+    "isSample": false
+  },
+  {
+    "id": "jagdish-temple-history-2",
+    "placeId": "jagdish-temple",
+    "title": "Reading the approach",
+    "text": "The raised approach to Jagdish Temple separates the surrounding street from its sacred spaces. Carved surfaces and pillars reward a slower look, but the route also serves worshippers. Leave room for people passing through and ask before photographing rituals. Visiting architecture and participating in worship are different activities sharing the same place.",
+    "language": "en",
+    "sourceType": "history",
+    "sourceRef": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/jagdish-temple",
+    "verifiedBy": "MIRAS automated source check (not field verification)",
+    "verifiedAt": "2026-10-30T15:30:00.000Z",
+    "rights": {
+      "owner": "MIRAS original editorial draft",
+      "permittedUse": "Original paraphrase prepared for MIRAS; source photographs and text are not licensed by this entry."
+    },
+    "updatedAt": "2026-10-30T15:30:00.000Z",
+    "isSample": false
+  }
+]

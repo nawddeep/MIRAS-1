@@ -1,0 +1,33 @@
+{
+  "places": [
+    {
+      "id": "ChIJ_cafe_one",
+      "displayName": {"text": "Lakeview Test Cafe"},
+      "formattedAddress": "Lal Ghat, Udaipur",
+      "location": {"latitude": 24.5790, "longitude": 73.6830},
+      "googleMapsUri": "https://maps.google.com/?cid=601",
+      "rating": 4.4, "userRatingCount": 900,
+      "priceLevel": "PRICE_LEVEL_MODERATE",
+      "priceRange": {"startPrice": {"currencyCode": "INR", "units": "400"}, "endPrice": {"currencyCode": "INR", "units": "600"}},
+      "types": ["cafe", "restaurant"]
+    },
+    {
+      "id": "ChIJ_resto_two",
+      "displayName": {"text": "Test Thali House"},
+      "formattedAddress": "Bapu Bazaar, Udaipur",
+      "location": {"latitude": 24.5810, "longitude": 73.6900},
+      "googleMapsUri": "https://maps.google.com/?cid=602",
+      "rating": 4.2, "userRatingCount": 3000,
+      "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+      "types": ["restaurant"]
+    },
+    {
+      "id": "ChIJ_resto_three",
+      "displayName": {"text": "Test Rooftop Dining"},
+      "location": {"latitude": 24.5770, "longitude": 73.6800},
+      "googleMapsUri": "https://maps.google.com/?cid=603",
+      "priceLevel": "PRICE_LEVEL_EXPENSIVE",
+      "types": ["restaurant"]
+    }
+  ]
+}

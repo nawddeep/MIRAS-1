@@ -1,0 +1,202 @@
+@import "tailwindcss";
+
+/* Design tokens, re-created from the Miras "reference boards" direction:
+   pale lake-blue paper, near-black ink, white pill controls, neutral grotesque type. */
+:root {
+  --paper: #e8f2f4;
+  --paper-warm: #f1f3ee;
+  --surface: #ffffff;
+  --surface-soft: rgb(255 255 255 / 0.72);
+  --ink: #080d0f;
+  --ink-2: #101718;
+  --text: #101718;
+  --muted: #526064;
+  --line: rgb(16 23 24 / 0.13);
+  --focus: #22728b;
+
+  /* accents (information, people, ok, action) */
+  --lake: #8fb0d6;
+  --lake-deep: #243b42;
+  --rose: #d98a78;
+  --ok: #8fd3a8;
+  --saffron: #f0a140;
+  --saffron-text: #9a5b12;
+  --danger-bg: #fff3eb;
+  --danger-line: #9c5234;
+  --danger-text: #703b28;
+
+  /* dark surfaces (trail cards, dark map) */
+  --night: #0b1128;
+  --night-2: #131b31;
+  --on-night: #eee9dd;
+  --muted-night: #a9b0c6;
+  --line-night: rgb(238 233 221 / 0.14);
+  --trail-yellow: #ffd23f;
+
+  --r-card: 26px;
+  --r-tile: 20px;
+  --r-input: 999px;
+  --shadow-soft: 0 8px 24px rgb(19 27 49 / 0.08);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-lake: var(--lake);
+  --color-lake-deep: var(--lake-deep);
+  --color-rose: var(--rose);
+  --color-ok: var(--ok);
+  --color-saffron: var(--saffron);
+  --color-saffron-text: var(--saffron-text);
+  --color-night: var(--night);
+  --color-night-2: var(--night-2);
+  --color-on-night: var(--on-night);
+  --color-muted-night: var(--muted-night);
+  --color-trail: var(--trail-yellow);
+  --radius-card: var(--r-card);
+  --radius-tile: var(--r-tile);
+  --font-sans: Arial, Helvetica, sans-serif;
+}
+
+html {
+  background: #dbe5e7;
+  scroll-behavior: smooth;
+}
+body {
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+button, a { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+h1, h2, h3 { font-weight: 400; letter-spacing: -0.035em; line-height: 1.15; text-wrap: balance; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.on-night :focus-visible { outline-color: var(--trail-yellow); }
+.tnum { font-variant-numeric: tabular-nums; }
+
+/* App canvas: 480px phone column, widening to 1000px on large screens (as in Miras). */
+.app-canvas {
+  max-width: 480px;
+  margin-inline: auto;
+  min-height: 100svh;
+  background: radial-gradient(ellipse at 80% 5%, #e0eff4 0, transparent 55%), linear-gradient(150deg, #e8f3f5, var(--paper-warm));
+  box-shadow: 0 0 80px rgb(19 27 49 / 0.08);
+  padding-bottom: calc(96px + env(safe-area-inset-bottom));
+}
+@media (min-width: 900px) {
+  .app-canvas { max-width: 1000px; }
+}
+
+.eyebrow { font-size: 11px; line-height: 17px; letter-spacing: 0.16em; font-weight: 600; text-transform: uppercase; color: var(--muted); }
+.wordmark { letter-spacing: 0.23em; font-size: 18px; font-weight: 600; }
+
+/* Pills and controls */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 10px 20px; border-radius: 999px; font-size: 16px; font-weight: 500; line-height: 1.3; text-align: center; transition: transform 180ms var(--ease-out), background 180ms, opacity 180ms; }
+.btn:active { transform: scale(0.97); }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+.btn-primary { background: var(--ink-2); color: #fff; }
+.btn-secondary { background: var(--surface); color: var(--ink-2); border: 1px solid var(--line); }
+.btn-ghost { color: var(--ink-2); text-decoration: underline; text-underline-offset: 4px; padding-inline: 8px; }
+.btn-sm { min-height: 44px; padding: 8px 14px; font-size: 14px; }
+.icon-btn { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 999px; background: rgb(255 255 255 / 0.7); border: 1px solid var(--line); flex-shrink: 0; }
+
+.chip { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 8px 16px; border-radius: 999px; background: rgb(255 255 255 / 0.88); border: 1px solid transparent; font-size: 15px; white-space: nowrap; transition: background 180ms, color 180ms; }
+.chip[aria-pressed="true"], .chip[aria-checked="true"], .chip[data-active="true"] { background: var(--ink-2); color: #fff; }
+
+.field { width: 100%; min-width: 0; min-height: 50px; padding: 12px 18px; border-radius: 999px; background: var(--surface); border: 1px solid #a1b5bd; font-size: 16px; }
+.field:focus { outline: 3px solid var(--focus); outline-offset: 2px; }
+textarea.field { border-radius: 18px; }
+.label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 6px; }
+
+.card { background: var(--surface-soft); border-radius: var(--r-card); padding: 18px; }
+.card-solid { background: var(--surface); border-radius: var(--r-card); padding: 18px; }
+.tile { background: rgb(255 255 255 / 0.86); border-radius: var(--r-tile); padding: 14px; }
+
+/* Honesty labels share one outline style; data-type badges get a fixed colour each. */
+.badge { display: inline-flex; align-items: center; gap: 4px; min-height: 24px; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: 0.02em; white-space: nowrap; }
+.badge-live { background: var(--ok); color: var(--ink); }
+.badge-scheduled { background: var(--lake); color: var(--ink); }
+.badge-estimated { border: 1px solid var(--saffron-text); color: var(--saffron-text); background: #fff; }
+.badge-historical { background: #e4dccb; color: #4a3e28; }
+.badge-user { background: #eee; color: var(--ink); }
+.badge-neutral { background: rgb(16 23 24 / 0.08); color: var(--ink-2); }
+.badge-suggested { border: 1px dashed currentColor; }
+
+.notice { border-left: 3px solid #758f99; background: rgb(255 255 255 / 0.6); padding: 12px 14px; border-radius: 0 14px 14px 0; font-size: 15px; line-height: 1.5; }
+.alert { padding: 14px; background: var(--danger-bg); border: 1px solid var(--danger-line); border-radius: 16px; color: var(--danger-text); font-size: 15px; line-height: 1.45; }
+
+.skeleton { background: linear-gradient(90deg, rgb(16 23 24 / 0.06), rgb(16 23 24 / 0.12), rgb(16 23 24 / 0.06)); background-size: 200% 100%; animation: shimmer 1.4s linear infinite; border-radius: 18px; }
+@keyframes shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.anim-rise { animation: rise 450ms var(--ease-out) both; }
+
+/* Bottom navigation: rounded white bar, active item is an ink pill (Miras pattern). */
+.bottom-nav { position: fixed; inset: auto 0 0 0; z-index: 40; max-width: 480px; margin-inline: auto; background: rgb(255 255 255 / 0.95); border-radius: 32px 32px 0 0; box-shadow: 0 -8px 30px rgb(31 50 56 / 0.06); padding: 6px 12px max(6px, env(safe-area-inset-bottom)); backdrop-filter: blur(16px); }
+.bottom-nav ul { display: flex; justify-content: space-around; align-items: center; height: 62px; }
+.bottom-nav a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-width: 72px; min-height: 52px; padding: 6px 12px; border-radius: 999px; font-size: 12px; color: var(--ink-2); }
+.bottom-nav a[aria-current="page"] { background: var(--ink-2); color: #fff; }
+@media (min-width: 900px) { .bottom-nav { max-width: 1000px; } }
+
+/* Timeline (day schedule) */
+.timeline { position: relative; }
+.timeline > li { position: relative; padding-left: 22px; }
+.timeline > li::before { content: ""; position: absolute; left: 6px; top: 0; bottom: 0; border-left: 2px dotted #93a5a9; }
+.timeline > li::after { content: ""; position: absolute; left: 1px; top: 22px; width: 12px; height: 12px; border-radius: 50%; background: var(--ink-2); box-shadow: 0 0 0 3px var(--paper); }
+.timeline > li[data-kind="buffer"]::after, .timeline > li[data-kind="free"]::after { background: #fff; border: 2px solid #93a5a9; }
+.timeline > li[data-kind="meal"]::after { background: var(--saffron); }
+
+/* Trail poster card (light) and dark variant */
+.trail-card { border-radius: 28px; overflow: hidden; background: repeating-radial-gradient(circle at 20% 10%, transparent 0 14px, rgb(16 23 24 / 0.025) 15px 16px), #f4f1e8; color: var(--ink-2); }
+.trail-card[data-theme="dark"] { background: repeating-radial-gradient(circle at 20% 10%, transparent 0 14px, rgb(255 255 255 / 0.03) 15px 16px), var(--night); color: var(--on-night); }
+.trail-stops { position: relative; display: flex; flex-direction: column; gap: 10px; padding-left: 18px; }
+.trail-stops::before { content: ""; position: absolute; left: 5px; top: 8px; bottom: 8px; border-left: 3px dotted currentColor; opacity: 0.55; }
+.trail-stops li { position: relative; font-size: 15px; line-height: 1.35; }
+.trail-stops li::before { content: ""; position: absolute; left: -18px; top: 4px; width: 13px; height: 13px; border-radius: 50%; background: currentColor; }
+.trail-stops li:first-child::before, .trail-stops li:last-child::before { background: var(--saffron); }
+.trail-card[data-theme="dark"] .trail-stops li:first-child::before, .trail-card[data-theme="dark"] .trail-stops li:last-child::before { background: var(--trail-yellow); }
+
+/* Map containers */
+.map-frame { position: relative; overflow: hidden; border-radius: 24px; background: #ccdde1; }
+.map-legend { position: absolute; left: 10px; bottom: 10px; z-index: 500; background: rgb(255 255 255 / 0.94); color: var(--ink-2); border-radius: 14px; padding: 8px 10px; font-size: 12px; line-height: 1.5; box-shadow: var(--shadow-soft); }
+.map-legend[data-theme="dark"] { background: rgb(11 17 40 / 0.9); color: var(--on-night); }
+.leaflet-container { font: inherit; background: #ccdde1; }
+.leaflet-container a { color: var(--lake-deep); }
+.leaflet-container .leaflet-control-attribution { font-size: 11px; line-height: 1.4; }
+.tiles-dark { filter: invert(1) hue-rotate(180deg) brightness(0.8) contrast(0.95) saturate(0.4); }
+.marker-pin { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--ink-2); color: #fff; border: 2px solid #fff; box-shadow: 0 2px 6px rgb(0 0 0 / 0.3); font-size: 12px; font-weight: 700; }
+.marker-pin > span { transform: rotate(45deg); }
+.marker-pin[data-kind="start"], .marker-pin[data-kind="end"] { background: var(--saffron); color: var(--ink); }
+.marker-pin[data-kind="rental"] { border-radius: 8px; transform: none; background: #2e6f8e; }
+.marker-pin[data-kind="rental"] > span { transform: none; }
+.marker-pin[data-theme="dark"] { background: var(--trail-yellow); color: var(--ink); border-color: var(--night); }
+.marker-pin[data-active="true"] { background: var(--saffron); color: var(--ink); width: 34px; height: 34px; }
+.marker-me { width: 18px; height: 18px; border-radius: 50%; background: #2a7fff; border: 3px solid #fff; box-shadow: 0 0 0 6px rgb(42 127 255 / 0.25); }
+.route-arrow { color: var(--ink-2); font-size: 14px; line-height: 1; text-shadow: 0 0 3px #fff; }
+.route-arrow[data-theme="dark"] { color: var(--trail-yellow); text-shadow: 0 0 3px var(--night); }
+
+/* Bottom sheet / side panel */
+.sheet-backdrop { position: fixed; inset: 0; background: rgb(8 13 15 / 0.35); z-index: 60; }
+.sheet { position: fixed; z-index: 70; inset: auto 0 0 0; max-width: 480px; margin-inline: auto; max-height: 88svh; overflow-y: auto; background: var(--paper-warm); border-radius: 28px 28px 0 0; padding: 10px 20px calc(24px + env(safe-area-inset-bottom)); box-shadow: 0 -10px 40px rgb(0 0 0 / 0.15); animation: rise 280ms var(--ease-out) both; }
+@media (min-width: 900px) {
+  .sheet { inset: 0 0 0 auto; max-width: 440px; max-height: none; border-radius: 28px 0 0 28px; margin: 0; padding-top: 20px; }
+}
+
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.skip-link { position: fixed; top: -100px; left: 16px; z-index: 100; background: var(--surface); padding: 12px 16px; border-radius: 12px; }
+.skip-link:focus { top: 8px; }
+.scroll-x { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding-bottom: 4px; }
+.scroll-x::-webkit-scrollbar { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

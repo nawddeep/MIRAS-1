@@ -1,0 +1,50 @@
+[
+  {
+    "id": "first-footsteps",
+    "title": "First footsteps",
+    "description": "Complete 1 trip",
+    "metric": "completedTrips",
+    "threshold": 1,
+    "status": "definition-only"
+  },
+  {
+    "id": "city-wanderer",
+    "title": "City wanderer",
+    "description": "Complete 5 trips",
+    "metric": "completedTrips",
+    "threshold": 5,
+    "status": "definition-only"
+  },
+  {
+    "id": "udaipur-explorer",
+    "title": "Udaipur explorer",
+    "description": "Complete 10 trips",
+    "metric": "completedTrips",
+    "threshold": 10,
+    "status": "definition-only"
+  },
+  {
+    "id": "trail-finder",
+    "title": "Trail finder",
+    "description": "Complete 3 walking trails",
+    "metric": "completedTrails",
+    "threshold": 3,
+    "status": "definition-only"
+  },
+  {
+    "id": "local-connections",
+    "title": "Local connections",
+    "description": "Complete 1 artisan visit",
+    "metric": "artisanVisits",
+    "threshold": 1,
+    "status": "definition-only"
+  },
+  {
+    "id": "memory-keeper",
+    "title": "Memory keeper",
+    "description": "Publish 5 memories",
+    "metric": "publishedMemories",
+    "threshold": 5,
+    "status": "definition-only"
+  }
+]

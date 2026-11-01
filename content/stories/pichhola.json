@@ -1,0 +1,36 @@
+[
+  {
+    "id": "pichhola-sample-1",
+    "placeId": "pichhola",
+    "title": "The lake and the city",
+    "text": "Lake Pichola is an artificial lake whose history predates the founding of Udaipur. The name is associated with Picholi village. Later expansion under Udai Singh II helped shape the waterside setting familiar today. Its shoreline offers a way to understand the relationship between the city, its buildings and its water.",
+    "language": "en",
+    "sourceType": "history",
+    "sourceRef": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/lake-pichola",
+    "verifiedBy": "MIRAS automated source check (not field verification)",
+    "verifiedAt": "2026-10-30T15:30:00.000Z",
+    "rights": {
+      "owner": "MIRAS original editorial draft",
+      "permittedUse": "Original paraphrase prepared for MIRAS; source photographs and text are not licensed by this entry."
+    },
+    "updatedAt": "2026-10-30T15:30:00.000Z",
+    "isSample": false
+  },
+  {
+    "id": "pichhola-history-2",
+    "placeId": "pichhola",
+    "title": "Islands on the water",
+    "text": "Jag Niwas and Jag Mandir give Lake Pichola recognisable island landmarks. Their position changes how the water is seen from the shore: buildings become reference points across an open surface. A view from a public lakeside area can introduce this relationship without assuming that every island or palace is freely accessible.",
+    "language": "en",
+    "sourceType": "history",
+    "sourceRef": "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/lake-pichola",
+    "verifiedBy": "MIRAS automated source check (not field verification)",
+    "verifiedAt": "2026-10-30T15:30:00.000Z",
+    "rights": {
+      "owner": "MIRAS original editorial draft",
+      "permittedUse": "Original paraphrase prepared for MIRAS; source photographs and text are not licensed by this entry."
+    },
+    "updatedAt": "2026-10-30T15:30:00.000Z",
+    "isSample": false
+  }
+]

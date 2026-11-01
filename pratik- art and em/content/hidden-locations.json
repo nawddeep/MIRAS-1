@@ -1,0 +1,62 @@
+[
+  {
+    "id": "explore-badi-lake",
+    "placeId": "badi-lake",
+    "note": "A curated alternative to a palace-only itinerary. This is a known public attraction, not a secret or unrestricted site. Confirm access locally.",
+    "sensitive": false
+  },
+  {
+    "id": "explore-ahar-cenotaphs",
+    "placeId": "ahar-cenotaphs",
+    "note": "A curated alternative to a palace-only itinerary. This is a known public attraction, not a secret or unrestricted site. Confirm access locally.",
+    "sensitive": false
+  },
+  {
+    "id": "explore-ahar-museum",
+    "placeId": "ahar-museum",
+    "note": "A curated alternative to a palace-only itinerary. This is a known public attraction, not a secret or unrestricted site. Confirm access locally.",
+    "sensitive": false
+  },
+  {
+    "id": "explore-shilpgram",
+    "placeId": "shilpgram",
+    "note": "A curated alternative to a palace-only itinerary. This is a known public attraction, not a secret or unrestricted site. Confirm access locally.",
+    "sensitive": false
+  },
+  {
+    "id": "explore-lok-kala-mandal",
+    "placeId": "lok-kala-mandal",
+    "note": "A curated alternative to a palace-only itinerary. This is a known public attraction, not a secret or unrestricted site. Confirm access locally.",
+    "sensitive": false
+  },
+  {
+    "id": "explore-moti-magri",
+    "placeId": "moti-magri",
+    "note": "A curated alternative to a palace-only itinerary. This is a known public attraction, not a secret or unrestricted site. Confirm access locally.",
+    "sensitive": false
+  },
+  {
+    "id": "explore-doodh-talai",
+    "placeId": "doodh-talai",
+    "note": "A curated alternative to a palace-only itinerary. This is a known public attraction, not a secret or unrestricted site. Confirm access locally.",
+    "sensitive": false
+  },
+  {
+    "id": "explore-udai-sagar",
+    "placeId": "udai-sagar",
+    "note": "A curated alternative to a palace-only itinerary. This is a known public attraction, not a secret or unrestricted site. Confirm access locally.",
+    "sensitive": false
+  },
+  {
+    "id": "explore-bagore-ki-haveli",
+    "placeId": "bagore-ki-haveli",
+    "note": "A curated alternative to a palace-only itinerary. This is a known public attraction, not a secret or unrestricted site. Confirm access locally.",
+    "sensitive": false
+  },
+  {
+    "id": "explore-saheliyon-ki-bari",
+    "placeId": "saheliyon-ki-bari",
+    "note": "A curated alternative to a palace-only itinerary. This is a known public attraction, not a secret or unrestricted site. Confirm access locally.",
+    "sensitive": false
+  }
+]

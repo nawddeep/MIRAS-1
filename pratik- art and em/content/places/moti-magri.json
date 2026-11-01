@@ -1,0 +1,31 @@
+{
+  "id": "moti-magri",
+  "slug": "moti-magri",
+  "name": "Moti Magri",
+  "name_hi": "मोती मगरी",
+  "category": "Memorial",
+  "lat": 24.59833,
+  "lng": 73.68306,
+  "summary": "A hill overlooking Fateh Sagar, known for the memorial to Maharana Pratap and Chetak.",
+  "visitTips": [
+    "Confirm admission, opening hours and the correct entrance before travelling.",
+    "Allow extra time for steps, heat and busy streets; ask staff about access needs."
+  ],
+  "openingHours": "Check with the venue before visiting; current admission hours are not confirmed.",
+  "typicalVisitMinutes": 60,
+  "photos": [
+    "/media/places/moti-magri-1.webp",
+    "/media/places/moti-magri-2.webp"
+  ],
+  "accessibility": {
+    "stepFree": "unknown",
+    "notes": "Step-free routes and facilities have not been checked in person."
+  },
+  "status": "published",
+  "isSample": false,
+  "sourceRefs": [
+    "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/moti-magri"
+  ],
+  "coordinateNote": "Approximate geographic reference, not an entrance pin. Use the named Google Maps listing and confirm access.",
+  "coordinateSource": "https://en.wikipedia.org/wiki/Moti_Magri"
+}

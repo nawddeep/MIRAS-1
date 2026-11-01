@@ -1,0 +1,61 @@
+{
+  "places": [
+    {
+      "id": "ChIJ_city_palace",
+      "displayName": {"text": "Test Palace Museum", "languageCode": "en"},
+      "formattedAddress": "Old City, Udaipur, Rajasthan 313001, India",
+      "location": {"latitude": 24.5764, "longitude": 73.6835},
+      "googleMapsUri": "https://maps.google.com/?cid=111",
+      "rating": 4.6, "userRatingCount": 52000,
+      "primaryType": "museum", "types": ["museum", "tourist_attraction"],
+      "regularOpeningHours": {
+        "openNow": true,
+        "periods": [
+          {"open": {"day": 0, "hour": 9, "minute": 30}, "close": {"day": 0, "hour": 17, "minute": 30}},
+          {"open": {"day": 1, "hour": 9, "minute": 30}, "close": {"day": 1, "hour": 17, "minute": 30}},
+          {"open": {"day": 2, "hour": 9, "minute": 30}, "close": {"day": 2, "hour": 17, "minute": 30}},
+          {"open": {"day": 3, "hour": 9, "minute": 30}, "close": {"day": 3, "hour": 17, "minute": 30}},
+          {"open": {"day": 4, "hour": 9, "minute": 30}, "close": {"day": 4, "hour": 17, "minute": 30}},
+          {"open": {"day": 5, "hour": 9, "minute": 30}, "close": {"day": 5, "hour": 17, "minute": 30}},
+          {"open": {"day": 6, "hour": 9, "minute": 30}, "close": {"day": 6, "hour": 17, "minute": 30}}
+        ],
+        "weekdayDescriptions": ["Monday: 9:30 AM – 5:30 PM","Tuesday: 9:30 AM – 5:30 PM","Wednesday: 9:30 AM – 5:30 PM","Thursday: 9:30 AM – 5:30 PM","Friday: 9:30 AM – 5:30 PM","Saturday: 9:30 AM – 5:30 PM","Sunday: 9:30 AM – 5:30 PM"]
+      }
+    },
+    {
+      "id": "ChIJ_temple",
+      "displayName": {"text": "Test Temple"},
+      "formattedAddress": "Jagdish Chowk, Udaipur",
+      "location": {"latitude": 24.5797, "longitude": 73.6838},
+      "googleMapsUri": "https://maps.google.com/?cid=222",
+      "rating": 4.5, "userRatingCount": 20000,
+      "types": ["hindu_temple", "place_of_worship"]
+    },
+    {
+      "id": "ChIJ_ghat",
+      "displayName": {"text": "Test Ghat"},
+      "formattedAddress": "Gangaur Ghat, Udaipur",
+      "location": {"latitude": 24.5800, "longitude": 73.6820},
+      "googleMapsUri": "https://maps.google.com/?cid=333",
+      "rating": 4.4, "userRatingCount": 180,
+      "types": ["tourist_attraction"]
+    },
+    {
+      "id": "ChIJ_garden",
+      "displayName": {"text": "Test Garden"},
+      "formattedAddress": "Saheli Marg, Udaipur",
+      "location": {"latitude": 24.6040, "longitude": 73.6990},
+      "googleMapsUri": "https://maps.google.com/?cid=444",
+      "rating": 4.3, "userRatingCount": 30000,
+      "types": ["park", "tourist_attraction"]
+    },
+    {
+      "id": "ChIJ_far_away",
+      "displayName": {"text": "Far Away Fort"},
+      "location": {"latitude": 25.5, "longitude": 74.9},
+      "googleMapsUri": "https://maps.google.com/?cid=555",
+      "types": ["tourist_attraction"]
+    }
+  ],
+  "nextPageToken": "PAGE2"
+}

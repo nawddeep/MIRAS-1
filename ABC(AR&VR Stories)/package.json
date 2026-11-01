@@ -1,0 +1,17 @@
+{
+  "name": "miras-ar-vr-stories",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node node_modules/next/dist/bin/next dev -H 0.0.0.0",
+    "dev:https": "node node_modules/next/dist/bin/next dev --experimental-https -H 0.0.0.0",
+    "build": "node node_modules/next/dist/bin/next build",
+    "start": "node node_modules/next/dist/bin/next start -H 0.0.0.0"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "three": "0.187.0"
+  }
+}

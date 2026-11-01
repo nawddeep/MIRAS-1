@@ -1,0 +1,31 @@
+{
+  "id": "doodh-talai",
+  "slug": "doodh-talai",
+  "name": "Doodh Talai",
+  "name_hi": "दूध तलाई",
+  "category": "Lake",
+  "lat": 24.5684295,
+  "lng": 73.6847684,
+  "summary": "A smaller waterbody near Lake Pichola, framed by hills and garden viewpoints.",
+  "visitTips": [
+    "Confirm admission, opening hours and the correct entrance before travelling.",
+    "Allow extra time for steps, heat and busy streets; ask staff about access needs."
+  ],
+  "openingHours": "Check with the venue before visiting; current admission hours are not confirmed.",
+  "typicalVisitMinutes": 45,
+  "photos": [
+    "/media/places/doodh-talai-1.webp",
+    "/media/places/doodh-talai-2.webp"
+  ],
+  "accessibility": {
+    "stepFree": "unknown",
+    "notes": "Step-free routes and facilities have not been checked in person."
+  },
+  "status": "published",
+  "isSample": false,
+  "sourceRefs": [
+    "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/dudh-talai-lake"
+  ],
+  "coordinateNote": "Approximate geographic reference, not an entrance pin. Use the named Google Maps listing and confirm access.",
+  "coordinateSource": "https://en.wikipedia.org/wiki/Doodh_Talai_Lake"
+}

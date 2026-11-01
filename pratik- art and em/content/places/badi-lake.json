@@ -1,0 +1,30 @@
+{
+  "id": "badi-lake",
+  "slug": "badi-lake",
+  "name": "Badi Lake",
+  "name_hi": "बड़ी झील",
+  "category": "Lake",
+  "lat": 24.616105,
+  "lng": 73.622127,
+  "summary": "Also called Jiyan Sagar, this historic reservoir lies beyond central Udaipur.",
+  "visitTips": [
+    "Confirm admission, opening hours and the correct entrance before travelling.",
+    "Allow extra time for steps, heat and busy streets; ask staff about access needs."
+  ],
+  "openingHours": "Check with the venue before visiting; current admission hours are not confirmed.",
+  "typicalVisitMinutes": 60,
+  "photos": [
+    "/media/places/badi-lake-2.webp"
+  ],
+  "accessibility": {
+    "stepFree": "unknown",
+    "notes": "Step-free routes and facilities have not been checked in person."
+  },
+  "status": "published",
+  "isSample": false,
+  "sourceRefs": [
+    "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/badi-lake"
+  ],
+  "coordinateNote": "Approximate geographic reference, not an entrance pin. Use the named Google Maps listing and confirm access.",
+  "coordinateSource": "https://en.wikipedia.org/wiki/Lake_Badi"
+}

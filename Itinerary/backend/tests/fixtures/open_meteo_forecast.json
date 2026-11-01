@@ -1,0 +1,13 @@
+{
+  "current": {"time": "2026-11-01T10:00", "temperature_2m": 27.1, "weather_code": 1, "wind_speed_10m": 8.2, "precipitation": 0.0},
+  "daily": {
+    "time": ["2026-11-02", "2026-11-03"],
+    "weather_code": [0, 63],
+    "temperature_2m_max": [31.0, 27.5],
+    "temperature_2m_min": [17.0, 18.2],
+    "precipitation_probability_max": [5, 80],
+    "wind_speed_10m_max": [10.1, 18.0],
+    "sunrise": ["2026-11-02T06:42", "2026-11-03T06:43"],
+    "sunset": ["2026-11-02T17:48", "2026-11-03T17:47"]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "miras",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "content:check": "tsx scripts/content-check.ts",
+    "backup": "node scripts/backup-community.mjs",
+    "db:migrate": "tsx scripts/db.ts migrate",
+    "db:status": "tsx scripts/db.ts status",
+    "db:templates": "tsx scripts/db.ts templates",
+    "db:import": "tsx scripts/db.ts import",
+    "db:seed": "tsx scripts/db.ts seed",
+    "db:import-abc": "tsx scripts/import-abc-mock.ts",
+    "trip-api": "cd Itinerary/backend && .venv-mac/bin/uvicorn main:app --port 8000",
+    "build:webpack": "next build --webpack"
+  },
+  "dependencies": {
+    "@google/genai": "2.31.0",
+    "@photo-sphere-viewer/core": "5.15.1",
+    "better-sqlite3": "13.0.3",
+    "leaflet": "^1.9.4",
+    "next": "16.4.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "sharp": "0.35.5",
+    "three": "^0.187.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@tailwindcss/turbopack": "4.3.3",
+    "@types/better-sqlite3": "9.6.0",
+    "@types/leaflet": "^1.9.22",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.3",
+    "tailwindcss": "4.3.3",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vitest": "5.0.5"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

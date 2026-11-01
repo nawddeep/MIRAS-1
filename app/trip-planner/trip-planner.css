@@ -1,0 +1,88 @@
+/* Trip planner (ported from Itinerary/frontend): every rule is scoped under .trip-planner so it cannot affect the rest of the PWA.
+   Generated from Itinerary/frontend/app/globals.css; edit here from now on. */
+.trip-planner {
+  --paper-warm: #f1f3ee; --surface: #ffffff; --surface-soft: rgb(255 255 255 / 0.72);
+  --text: #101718; --muted: #526064; --focus: #22728b;
+  --danger-bg: #fff3eb; --danger-line: #9c5234; --danger-text: #703b28;
+  --night: #0b1128; --night-2: #131b31; --on-night: #eee9dd; --muted-night: #a9b0c6; --line-night: rgb(238 233 221 / 0.14); --trail-yellow: #ffd23f;
+  --r-card: 26px; --r-tile: 20px; --shadow-soft: 0 8px 24px rgb(19 27 49 / 0.08);
+  color: var(--text); font-size: 17px; line-height: 1.55; -webkit-font-smoothing: antialiased;
+}
+.trip-planner :is(button, input, select, textarea) { font: inherit; color: inherit; }
+.trip-planner :is(h1, h2, h3) { font-weight: 400; letter-spacing: -0.035em; line-height: 1.15; text-wrap: balance; }
+.trip-planner :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.trip-planner .on-night :focus-visible { outline-color: var(--trail-yellow); }
+.trip-planner .wordmark { letter-spacing: 0.23em; font-size: 18px; font-weight: 600; }
+.trip-planner .tnum { font-variant-numeric: tabular-nums; }
+.trip-planner .eyebrow { font-size: 11px; line-height: 17px; letter-spacing: 0.16em; font-weight: 600; text-transform: uppercase; color: var(--muted); }
+.trip-planner .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 10px 20px; border-radius: 999px; font-size: 16px; font-weight: 500; line-height: 1.3; text-align: center; transition: transform 180ms var(--ease-out), background 180ms, opacity 180ms; }
+.trip-planner .btn:active { transform: scale(0.97); }
+.trip-planner .btn:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
+.trip-planner .btn-primary { background: var(--ink-2); color: #fff; }
+.trip-planner .btn-secondary { background: var(--surface); color: var(--ink-2); border: 1px solid var(--line); }
+.trip-planner .btn-ghost { color: var(--ink-2); text-decoration: underline; text-underline-offset: 4px; padding-inline: 8px; }
+.trip-planner .btn-sm { min-height: 44px; padding: 8px 14px; font-size: 14px; }
+.trip-planner .icon-btn { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 999px; background: rgb(255 255 255 / 0.7); border: 1px solid var(--line); flex-shrink: 0; }
+.trip-planner .chip { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 8px 16px; border-radius: 999px; background: rgb(255 255 255 / 0.88); border: 1px solid transparent; font-size: 15px; white-space: nowrap; transition: background 180ms, color 180ms; }
+.trip-planner .chip[aria-pressed="true"], .trip-planner .chip[aria-checked="true"], .trip-planner .chip[data-active="true"] { background: var(--ink-2); color: #fff; }
+.trip-planner .field { width: 100%; min-width: 0; min-height: 50px; padding: 12px 18px; border-radius: 999px; background: var(--surface); border: 1px solid #a1b5bd; font-size: 16px; }
+.trip-planner .field:focus { outline: 3px solid var(--focus); outline-offset: 2px; }
+.trip-planner textarea.field { border-radius: 18px; }
+.trip-planner .label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 6px; }
+.trip-planner .card { background: var(--surface-soft); border-radius: var(--r-card); padding: 18px; }
+.trip-planner .card-solid { background: var(--surface); border-radius: var(--r-card); padding: 18px; }
+.trip-planner .tile { background: rgb(255 255 255 / 0.86); border-radius: var(--r-tile); padding: 14px; }
+.trip-planner .badge { display: inline-flex; align-items: center; gap: 4px; min-height: 24px; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: 0.02em; white-space: nowrap; }
+.trip-planner .badge-live { background: var(--ok); color: var(--ink); }
+.trip-planner .badge-scheduled { background: var(--lake); color: var(--ink); }
+.trip-planner .badge-estimated { border: 1px solid var(--saffron-text); color: var(--saffron-text); background: #fff; }
+.trip-planner .badge-historical { background: #e4dccb; color: #4a3e28; }
+.trip-planner .badge-user { background: #eee; color: var(--ink); }
+.trip-planner .badge-neutral { background: rgb(16 23 24 / 0.08); color: var(--ink-2); }
+.trip-planner .badge-suggested { border: 1px dashed currentColor; }
+.trip-planner .notice { border-left: 3px solid #758f99; background: rgb(255 255 255 / 0.6); padding: 12px 14px; border-radius: 0 14px 14px 0; font-size: 15px; line-height: 1.5; }
+.trip-planner .alert { padding: 14px; background: var(--danger-bg); border: 1px solid var(--danger-line); border-radius: 16px; color: var(--danger-text); font-size: 15px; line-height: 1.45; }
+.trip-planner .skeleton { background: linear-gradient(90deg, rgb(16 23 24 / 0.06), rgb(16 23 24 / 0.12), rgb(16 23 24 / 0.06)); background-size: 200% 100%; animation: trip-shimmer 1.4s linear infinite; border-radius: 18px; }
+@keyframes trip-shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+@keyframes trip-rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.trip-planner .anim-rise { animation: trip-rise 450ms var(--ease-out) both; }
+.trip-planner .timeline { position: relative; }
+.trip-planner .timeline > li { position: relative; padding-left: 22px; }
+.trip-planner .timeline > li::before { content: ""; position: absolute; left: 6px; top: 0; bottom: 0; border-left: 2px dotted #93a5a9; }
+.trip-planner .timeline > li::after { content: ""; position: absolute; left: 1px; top: 22px; width: 12px; height: 12px; border-radius: 50%; background: var(--ink-2); box-shadow: 0 0 0 3px var(--paper); }
+.trip-planner .timeline > li[data-kind="buffer"]::after, .trip-planner .timeline > li[data-kind="free"]::after { background: #fff; border: 2px solid #93a5a9; }
+.trip-planner .timeline > li[data-kind="meal"]::after { background: var(--saffron); }
+.trip-planner .trail-card { border-radius: 28px; overflow: hidden; background: repeating-radial-gradient(circle at 20% 10%, transparent 0 14px, rgb(16 23 24 / 0.025) 15px 16px), #f4f1e8; color: var(--ink-2); }
+.trip-planner .trail-card[data-theme="dark"] { background: repeating-radial-gradient(circle at 20% 10%, transparent 0 14px, rgb(255 255 255 / 0.03) 15px 16px), var(--night); color: var(--on-night); }
+.trip-planner .trail-stops { position: relative; display: flex; flex-direction: column; gap: 10px; padding-left: 18px; }
+.trip-planner .trail-stops::before { content: ""; position: absolute; left: 5px; top: 8px; bottom: 8px; border-left: 3px dotted currentColor; opacity: 0.55; }
+.trip-planner .trail-stops li { position: relative; font-size: 15px; line-height: 1.35; }
+.trip-planner .trail-stops li::before { content: ""; position: absolute; left: -18px; top: 4px; width: 13px; height: 13px; border-radius: 50%; background: currentColor; }
+.trip-planner .trail-stops li:first-child::before, .trip-planner .trail-stops li:last-child::before { background: var(--saffron); }
+.trip-planner .trail-card[data-theme="dark"] .trail-stops li:first-child::before, .trip-planner .trail-card[data-theme="dark"] .trail-stops li:last-child::before { background: var(--trail-yellow); }
+.trip-planner .map-frame { position: relative; overflow: hidden; border-radius: 24px; background: #ccdde1; }
+.trip-planner .map-legend { position: absolute; left: 10px; bottom: 10px; z-index: 500; background: rgb(255 255 255 / 0.94); color: var(--ink-2); border-radius: 14px; padding: 8px 10px; font-size: 12px; line-height: 1.5; box-shadow: var(--shadow-soft); }
+.trip-planner .map-legend[data-theme="dark"] { background: rgb(11 17 40 / 0.9); color: var(--on-night); }
+.trip-planner .leaflet-container { font: inherit; background: #ccdde1; }
+.trip-planner .leaflet-container a { color: var(--lake-deep); }
+.trip-planner .leaflet-container .leaflet-control-attribution { font-size: 11px; line-height: 1.4; }
+.trip-planner .tiles-dark { filter: invert(1) hue-rotate(180deg) brightness(0.8) contrast(0.95) saturate(0.4); }
+.trip-planner .marker-pin { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--ink-2); color: #fff; border: 2px solid #fff; box-shadow: 0 2px 6px rgb(0 0 0 / 0.3); font-size: 12px; font-weight: 700; }
+.trip-planner .marker-pin > span { transform: rotate(45deg); }
+.trip-planner .marker-pin[data-kind="start"], .trip-planner .marker-pin[data-kind="end"] { background: var(--saffron); color: var(--ink); }
+.trip-planner .marker-pin[data-kind="rental"] { border-radius: 8px; transform: none; background: #2e6f8e; }
+.trip-planner .marker-pin[data-kind="rental"] > span { transform: none; }
+.trip-planner .marker-pin[data-theme="dark"] { background: var(--trail-yellow); color: var(--ink); border-color: var(--night); }
+.trip-planner .marker-pin[data-active="true"] { background: var(--saffron); color: var(--ink); width: 34px; height: 34px; }
+.trip-planner .marker-me { width: 18px; height: 18px; border-radius: 50%; background: #2a7fff; border: 3px solid #fff; box-shadow: 0 0 0 6px rgb(42 127 255 / 0.25); }
+.trip-planner .route-arrow { color: var(--ink-2); font-size: 14px; line-height: 1; text-shadow: 0 0 3px #fff; }
+.trip-planner .route-arrow[data-theme="dark"] { color: var(--trail-yellow); text-shadow: 0 0 3px var(--night); }
+.trip-planner .sheet-backdrop { position: fixed; inset: 0; background: rgb(8 13 15 / 0.35); z-index: 60; }
+.trip-planner .sheet { position: fixed; z-index: 70; inset: auto 0 0 0; max-width: 480px; margin-inline: auto; max-height: 88svh; overflow-y: auto; background: var(--paper-warm); border-radius: 28px 28px 0 0; padding: 10px 20px calc(24px + env(safe-area-inset-bottom)); box-shadow: 0 -10px 40px rgb(0 0 0 / 0.15); animation: trip-rise 280ms var(--ease-out) both; }
+@media (min-width: 900px) {
+  .trip-planner .sheet { inset: 0 0 0 auto; max-width: 440px; max-height: none; border-radius: 28px 0 0 28px; margin: 0; padding-top: 20px; }
+}
+.trip-planner .scroll-x { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding-bottom: 4px; }
+.trip-planner .scroll-x::-webkit-scrollbar { display: none; }
+/* Grid items must be allowed to shrink, or one long place name widens the whole page. */
+.trip-planner .grid > * { min-width: 0; }

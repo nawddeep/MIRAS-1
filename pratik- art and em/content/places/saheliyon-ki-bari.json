@@ -1,0 +1,31 @@
+{
+  "id": "saheliyon-ki-bari",
+  "slug": "saheliyon-ki-bari",
+  "name": "Saheliyon Ki Bari",
+  "name_hi": "सहेलियों की बाड़ी",
+  "category": "Garden",
+  "lat": 24.60278,
+  "lng": 73.68528,
+  "summary": "An eighteenth-century garden of fountains, marble features and shaded paths near Fateh Sagar.",
+  "visitTips": [
+    "Confirm admission, opening hours and the correct entrance before travelling.",
+    "Allow extra time for steps, heat and busy streets; ask staff about access needs."
+  ],
+  "openingHours": "Check with the venue before visiting; current admission hours are not confirmed.",
+  "typicalVisitMinutes": 60,
+  "photos": [
+    "/media/places/saheliyon-ki-bari-1.webp",
+    "/media/places/saheliyon-ki-bari-2.webp"
+  ],
+  "accessibility": {
+    "stepFree": "unknown",
+    "notes": "Step-free routes and facilities have not been checked in person."
+  },
+  "status": "published",
+  "isSample": false,
+  "sourceRefs": [
+    "https://www.incredibleindia.gov.in/en/rajasthan/udaipur/saheliyon-ki-bari"
+  ],
+  "coordinateNote": "Approximate geographic reference, not an entrance pin. Use the named Google Maps listing and confirm access.",
+  "coordinateSource": "https://en.wikipedia.org/wiki/Saheliyon-ki-Bari"
+}

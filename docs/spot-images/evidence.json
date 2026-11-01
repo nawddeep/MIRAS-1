@@ -1,0 +1,93 @@
+{
+  "contract": "README.md",
+  "targetViewports": [
+    "390x844",
+    "1440x900"
+  ],
+  "accessibility": {
+    "status": "pass",
+    "evidence": "Photo alt text distinguishes exact landmarks from category scenery. Credit disclosures use native details/summary and links. Labelled search and category controls retained. Reduced-motion keyboard focus checked in states.mjs."
+  },
+  "responsive": {
+    "status": "pass",
+    "evidence": "Five screens tested at 360, 390 and 1440 pixels without horizontal overflow or page errors; fixed-aspect local image frames reserve space."
+  },
+  "contentStates": {
+    "loading": {
+      "status": "pass",
+      "evidence": "Local image frames reserve aspect ratio; lazy image completion and naturalWidth checked after scrolling to the matching card."
+    },
+    "empty": {
+      "status": "pass",
+      "evidence": "Searching Company yields zero results and Clear filters restores 201 visible suggestions."
+    },
+    "error": {
+      "status": "pass",
+      "evidence": "Aborting Ambrai image request displays Image unavailable while keeping Maps and metadata usable."
+    },
+    "partial": {
+      "status": "pass",
+      "evidence": "179 suggestions use explicitly labelled category scenery; 22 have matched place photos. Original import remains intact."
+    },
+    "success": {
+      "status": "pass",
+      "evidence": "All mapped local photo requests return 200 with rights records; Ambrai credit links and pagination verified."
+    },
+    "permission": {
+      "status": "not-applicable",
+      "reason": "This image update adds no camera, location, account or upload permission request; community/private-photo permissions are tested separately."
+    }
+  },
+  "renderedEvidence": [
+    {
+      "viewport": "390x844",
+      "artifact": "discover-hidden-390.png",
+      "observation": "Rendered local photo and surrounding content inspected; no horizontal overflow or browser page errors."
+    },
+    {
+      "viewport": "390x844",
+      "artifact": "discover-hotels-390.png",
+      "observation": "Rendered local photo and surrounding content inspected; no horizontal overflow or browser page errors."
+    },
+    {
+      "viewport": "390x844",
+      "artifact": "discover-rentals-390.png",
+      "observation": "Rendered local photo and surrounding content inspected; no horizontal overflow or browser page errors."
+    },
+    {
+      "viewport": "390x844",
+      "artifact": "discover-locals-390.png",
+      "observation": "Rendered local photo and surrounding content inspected; no horizontal overflow or browser page errors."
+    },
+    {
+      "viewport": "390x844",
+      "artifact": "account-390.png",
+      "observation": "Rendered local photo and surrounding content inspected; no horizontal overflow or browser page errors."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "discover-hidden-1440.png",
+      "observation": "Rendered local photo and surrounding content inspected; no horizontal overflow or browser page errors."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "discover-hotels-1440.png",
+      "observation": "Rendered local photo and surrounding content inspected; no horizontal overflow or browser page errors."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "discover-rentals-1440.png",
+      "observation": "Rendered local photo and surrounding content inspected; no horizontal overflow or browser page errors."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "discover-locals-1440.png",
+      "observation": "Rendered local photo and surrounding content inspected; no horizontal overflow or browser page errors."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "account-1440.png",
+      "observation": "Rendered local photo and surrounding content inspected; no horizontal overflow or browser page errors."
+    }
+  ]
+}

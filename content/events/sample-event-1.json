@@ -1,0 +1,12 @@
+{
+  "id": "sample-event-1",
+  "title": "SAMPLE: event title goes here",
+  "organiser": "SAMPLE: organiser name goes here",
+  "startsAt": "2027-01-15T10:00:00.000+05:30",
+  "language": "Hindi, English",
+  "durationMinutes": 120,
+  "cost": "SAMPLE: cost goes here",
+  "howToBook": "SAMPLE: how to book goes here (outside the app)",
+  "updatedAt": "2026-10-28T00:00:00.000Z",
+  "isSample": true
+}

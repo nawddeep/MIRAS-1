@@ -1,0 +1,75 @@
+{
+  "contract": "../PICHHOLA_IMPLEMENTATION.md: supplied Pichhola Hours board, eleven screens, exact two fonts, time-aware home and truthful content labels.",
+  "targetViewports": [
+    "390x844",
+    "393x852",
+    "360x800",
+    "1440x900"
+  ],
+  "accessibility": {
+    "status": "pass",
+    "evidence": "Playwright checked keyboard skip-link focus, labelled controls, pressed/selected states, 44px navigation targets and reduced-motion animations; rendered bilingual text and focus reviewed. Focused checks only, not a full WCAG audit."
+  },
+  "responsive": {
+    "status": "pass",
+    "evidence": "Browser assertions verify document width never exceeds all three required mobile viewports; screenshot review covers those sizes plus 1440x900."
+  },
+  "contentStates": {
+    "loading": {
+      "status": "pass",
+      "evidence": "Camera upload test holds the API request open and confirms processing status and selected-photo preview."
+    },
+    "empty": {
+      "status": "pass",
+      "evidence": "Unmatched place search shows Nothing matched your search and the All reset restores places; empty saved collection offers Explore places."
+    },
+    "error": {
+      "status": "pass",
+      "evidence": "Camera API 503 displays a retryable error and keeps the capture control usable; prior suite verifies dark photos, timeouts and offline enquiries."
+    },
+    "partial": {
+      "status": "pass",
+      "evidence": "Sample story, artisan and visit information stay visibly labelled; arbitrary ratings and confidence percentages are absent."
+    },
+    "success": {
+      "status": "pass",
+      "evidence": "Place and story bookmarks survive reload, appear in Profile and can be removed; thumbnails update the hero."
+    },
+    "permission": {
+      "status": "pass",
+      "evidence": "Camera denial test confirms upload remains available and place links offer a recovery path; fake live-camera capture also passed."
+    }
+  },
+  "renderedEvidence": [
+    {
+      "viewport": "390x844",
+      "artifact": "390x844/02-home-dawn.png",
+      "observation": "All eleven reference screens, saved collection and neutral home captured; reference composition reviewed. Recognition starts at top after selection."
+    },
+    {
+      "viewport": "393x852",
+      "artifact": "393x852/02-home-dawn.png",
+      "observation": "Morning search, category controls, feature card and navigation fit; all reference screens captured without horizontal overflow."
+    },
+    {
+      "viewport": "360x800",
+      "artifact": "360x800/02-home-dawn.png",
+      "observation": "Narrow layouts retain readable bilingual titles, photo selection, navigation and vertical scrolling. All reference states captured."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "1440x900/home.png",
+      "observation": "Centered application shell and navigation align; keyboard skip link is visible when focused."
+    }
+  ],
+  "validation": {
+    "unitTests": "132 passed across 19 files",
+    "fullBrowserSuite": "82 passed before final small refinements",
+    "finalTargetedBrowserSuite": "29 passed against the final production build",
+    "lint": "pass, no warnings",
+    "typecheck": "pass",
+    "build": "pass; 3 existing dynamic-filesystem tracing warnings",
+    "content": "0 schema errors, 50 pre-existing sample/unverified items",
+    "deviceLimit": "Physical iOS/Android, real camera/torch and voice availability not tested."
+  }
+}
